@@ -43,6 +43,9 @@ nav ul li a{
     width: 100vw;
     height: 100vh;
     background-color: black;
+    background-image: url("../images/profile777.png");
+    background-size: cover;
+
 }
 
 nav div h1{
@@ -63,7 +66,27 @@ nav>div{
 
 /* <------------hero section------------> */
 
+#hero_text{
+    color: white;
+    padding-top: 12%;
+    height: 80vh;
+    position: relative;
+    
+    margin-left: 10%;
+}
 
+#hero_text p{
+    font-weight: 100;
+    font-size: 30px;
+}
 
+#hero_text h1{
+    font-weight: 550;
+    font-size: 60px;
+}
+
+#hero_text span{
+    color: orangered;
+}
 
 
