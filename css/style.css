@@ -39,12 +39,31 @@ nav ul li a{
     margin: 0px 15px;
 }
 
-.hero_page{
+#hero_page{
     width: 100vw;
     height: 100vh;
     background-color: black;
 }
 
+nav div h1{
+    display: inline-block;
+}
+
+nav>div{
+    display: flex;
+    height: 100%;
+    
+}
+
+#logo_text{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
 /* <------------hero section------------> */
+
+
+
 
 
