@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <div>
         <!-- navbar and hero page -->
@@ -14,11 +16,13 @@
                 <div>
                     <img src="./images/logo.png" alt="">
                     <div id="logo_text">
-                        <h1 style="color: orangered;">V</h1><h1>edant</h1>
-                        <h1 style="color: orangered;">T</h1><h1>athe</h1>
+                        <h1 style="color: orangered;">V</h1>
+                        <h1>edant</h1>
+                        <h1 style="color: orangered;">T</h1>
+                        <h1>athe</h1>
                     </div>
-                    
-                    </div>
+
+                </div>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -32,13 +36,81 @@
                 <p>Web Developer</p>
                 <h1>Hi, I`m <span>Vedant </span> <br>Tathe From India</h1>
             </div>
-            
+
         </div>
 
         <!-- about page -->
-        
+        <div id="about_page">
+            <div class="container">
+                <div class="row">
+                    <div class="about_col_1">
+                        <img src="./images/profile_new.png" alt="">
+                    </div>
+                    <div class="about_col_2">
+                        <h1>About Me</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsam consequatur autem
+                            pariatur, ab distinctio earum assumenda numquam vel explicabo! Culpa nesciunt veniam nostrum
+                            ratione possimus voluptates deserunt, blanditiis animi. Lorem ipsum dolor, sit amet
+                            consectetur adipisicing elit. Aut, voluptatum dolore et, necessitatibus eaque tempora cum
+                            asperiores laborum, soluta mollitia expedita placeat fugit officia. Commodi quam quis enim!
+                            Sit, minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, quibusdam!
+                        </p>
+
+                        <div class="about_menu">
+                            <h3 class="tab_links active_link" id="skills" onclick="tabClick('skills')">Skills</h3>
+                            <h3 class="tab_links" id="education" onclick="tabClick('education')">Education</h3>
+                        </div>
+
+                            <div class="tab_content active_tab" id="skills_tab">
+
+                                <ul>
+                                    <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, cum. <br></li>
+                                    <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, cum. <br></li>
+                                    <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, cum. <br></li>
+                                </ul>
+                            </div>
+                            <div class="tab_content" id="education_tab">
+
+                                <ul>
+                                    <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, cum. <br></li>
+                                    <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, cum. <br></li>
+                                </ul>
+                            </div>
+                            
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </div>
+
+
+    <script>
+        
+        var tablink = document.getElementsByClassName("tab_links");
+            var tabcont = document.getElementsByClassName("tab_content");
+        function tabClick(name) {
+            for (tl of tablink) {
+                tl.classList.remove("active_link");
+            } 
+            for (tc of tabcont) {
+                tc.classList.remove("active_tab");
+            }
+
+            var activelink = document.getElementById(name);
+            activelink.classList.add("active_link");
+
+            var activetab = document.getElementById(name+"_tab");
+            activetab.classList.add("active_tab");
+
+            
+
+        }
+    </script>
 </body>
+
 </html>

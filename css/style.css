@@ -43,7 +43,7 @@ nav ul li a{
     width: 100vw;
     height: 100vh;
     background-color: black;
-    background-image: url("../images/profile777.png");
+    background-image: url("../images/profile_newnew1.png");
     background-size: cover;
 
 }
@@ -91,3 +91,71 @@ nav>div{
 }
 
 
+/* About Page */
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#about_page{
+    color: white;
+    background-color: rgb(26, 25, 25);  
+    padding: 80px 100px;
+}
+
+.about_col_1{
+    flex-basis: 35%;
+}
+
+#about_page img{
+    width: 90%;
+    border-radius: 15px;
+}
+
+
+
+.about_col_2{
+    flex-basis: 55%;
+}
+
+
+.about_col_2 p{
+    margin: 30px 0px;
+}
+
+.about_menu{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: 20px 0px;
+}
+
+.tab_links{
+    cursor: pointer;
+    position: relative;
+}
+
+.tab_links::after{
+    content: '';
+    width: 0;    
+    height: 3px;
+    background-color: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+
+.tab_links.active_link::after{
+    width: 70%;
+}
+
+.tab_content{
+    display: none;
+}
+
+.tab_content.active_tab{
+    display: block;
+}
