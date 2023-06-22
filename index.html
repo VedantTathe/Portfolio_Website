@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="./css/style.css">
+    <!-- <script src="https://kit.fontawesome.com/c8a0e865fe.js" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
     <div>
-        <!-- navbar and hero page -->
+        <!-- Navbar and Hero Page -->
         <div id="hero_page">
             <nav>
                 <div>
                     <img src="./images/logo.png" alt="">
                     <div id="logo_text">
-                        <h1 style="color: orangered;">V</h1>
-                        <h1>edant</h1>
-                        <h1 style="color: orangered;">T</h1>
-                        <h1>athe</h1>
+                        <h1  style="color: orangered;">V</h1>
+                        <h1  style="margin-left: -7px;">edant</h1>
+                        <h1 style="color: orangered;">&nbsp;T</h1>
+                        <h1 style="margin-left: -7px;">athe</h1>
                     </div>
 
                 </div>
@@ -27,19 +28,19 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
 
             <div id="hero_text">
                 <p>Web Developer</p>
-                <h1>Hi, I`m <span>Vedant </span> <br>Tathe From India</h1>
+                <h1>Hi, I`m <div class="name">Vedant </div> <br>Tathe From India</h1>
             </div>
 
         </div>
 
-        <!-- about page -->
+        <!-- About Section -->
         <div id="about_page">
             <div class="container">
                 <div class="row">
@@ -57,26 +58,32 @@
                         </p>
 
                         <div class="about_menu">
-                            <h3 class="tab_links active_link" id="skills" onclick="tabClick('skills')">Skills</h3>
-                            <h3 class="tab_links" id="education" onclick="tabClick('education')">Education</h3>
+                            <h3 class="tab_links " id="skills" onclick="tabClick('skills')">Skills</h3>
+                            <h3 class="tab_links active_link" id="education" onclick="tabClick('education')">Education
+                            </h3>
                         </div>
 
-                            <div class="tab_content active_tab" id="skills_tab">
+                        <div class="tab_content" id="skills_tab">
 
-                                <ul>
-                                    <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, cum. <br></li>
-                                    <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, cum. <br></li>
-                                    <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, cum. <br></li>
-                                </ul>
-                            </div>
-                            <div class="tab_content" id="education_tab">
+                            <ul>
+                                <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Voluptate, cum. <br></li>
+                                <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Voluptate, cum. <br></li>
+                                <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Voluptate, cum. <br></li>
+                            </ul>
+                        </div>
+                        <div class="tab_content  active_tab" id="education_tab">
 
-                                <ul>
-                                    <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, cum. <br></li>
-                                    <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, cum. <br></li>
-                                </ul>
-                            </div>
-                            
+                            <ul>
+                                <li><span>Diploma in Computer Engineering</span><br>College: Government Polytechnic,
+                                    Amravati <br>Start Year: 2021 <br>End Year: 2024<br>Percentage: (1st Year) 92% and
+                                    2nd Year </li>
+                                <li><span>SSC</span><br>School: Saraswati Vidyalaya, Amravati<br>Percentage: 98.40%</li>
+                            </ul>
+                        </div>
+
 
 
 
@@ -85,18 +92,58 @@
             </div>
         </div>
 
+        <!-- Services Section-->
+        <div class="services">
+            <div class="container">
+                <div class="subtitle">
+                    <h1 style="color: orangered;">Services</h1>
+                </div>
+
+                <div class="service_box">
+                    <div>
+                        <h1>Website Development</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias laboriosam
+                            temporibus debitis libero! Debitis sequi ab mollitia optio delectus?</p>
+                    </div>
+                    <div>
+                        <h1>App Development</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias laboriosam
+                            temporibus debitis libero! Debitis sequi ab mollitia optio delectus?</p>
+                    </div>
+                    <div>
+                        <h1>Sofware Development</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias laboriosam
+                            temporibus debitis libero! Debitis sequi ab mollitia optio delectus?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="project_section">
+            <div class="container">
+                <h1 class="subtitle">Projects</h1>
+                <div class="projects">
+                    <div>
+                        <img src="./images/project1.jpg" alt="">
+                    </div>
+                    <div>hello</div>
+                    <div>helllo</div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
 
     <script>
-        
+
         var tablink = document.getElementsByClassName("tab_links");
-            var tabcont = document.getElementsByClassName("tab_content");
+        var tabcont = document.getElementsByClassName("tab_content");
         function tabClick(name) {
             for (tl of tablink) {
                 tl.classList.remove("active_link");
-            } 
+            }
             for (tc of tabcont) {
                 tc.classList.remove("active_tab");
             }
@@ -104,10 +151,10 @@
             var activelink = document.getElementById(name);
             activelink.classList.add("active_link");
 
-            var activetab = document.getElementById(name+"_tab");
+            var activetab = document.getElementById(name + "_tab");
             activetab.classList.add("active_tab");
 
-            
+
 
         }
     </script>

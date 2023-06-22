@@ -64,6 +64,8 @@ nav>div{
     left: 30px;
 }
 
+
+
 /* <------------hero section------------> */
 
 #hero_text{
@@ -86,10 +88,17 @@ nav>div{
     font-size: 60px;
 }
 
-#hero_text span{
+.name{
     color: orangered;
+    transition: transform 0.5s;
+    cursor: pointer;
+    display: inline-block;
 }
 
+.name:hover{
+    color: white;
+    transform: scale(1.1);
+}
 
 /* About Page */
 
@@ -101,16 +110,21 @@ nav>div{
 
 #about_page{
     color: white;
-    background-color: rgb(26, 25, 25);  
+    background-color: rgb(22, 22, 22);  
     padding: 80px 100px;
 }
 
 .about_col_1{
     flex-basis: 35%;
+    transition: translate 2s;
+}
+
+.about_col_1:hover{
+    transform: scale(1.07);
 }
 
 #about_page img{
-    width: 90%;
+    width: 100%;
     border-radius: 15px;
 }
 
@@ -129,6 +143,7 @@ nav>div{
     display: flex;
     justify-content: space-between;
     width: 40%;
+    font-size: 22px;
     margin: 20px 0px;
 }
 
@@ -158,4 +173,111 @@ nav>div{
 
 .tab_content.active_tab{
     display: block;
+}
+
+.tab_content ul li{
+    font-size: 16px;
+    list-style: none;
+    line-height: 20px;
+}
+
+.tab_content span{
+    font-size: 20px;
+    color: orange;
+    line-height: 40px;
+    font-weight: 800;
+}
+
+/* <--------------------services------------------> */
+
+.services{
+    background-color: rgb(26, 26, 26);
+    /* height: 40vh; */
+    color: white;
+    padding: 40px 60px 70px 60px;
+    
+}
+
+.subtitle{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service_box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    /* overflow: hidden; */
+}
+
+.service_box div{
+    
+    background-color: rgb(46, 46, 46);
+    border-radius: 15px;
+    padding: 20px 20px;
+    
+    transition: 0.5s;
+}
+
+.service_box div:hover {
+    background: linear-gradient(rgb(46, 46, 46), rgb(164, 61, 1));
+    transform: translateY(-10px);
+}
+
+.service_box div h1{
+    line-height: 60px;
+}
+
+.service_box div p{
+    line-height: 23px;
+}
+
+.service_box div i{
+    height: 10px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+
+/* <------------------Projects----------------> */
+
+.project_section{
+    background-color: rgb(36, 36, 36);
+    /* height: 40vh; */
+    color: white;
+    padding: 40px 60px 70px 60px;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    overflow: hidden;
+}
+
+.projects img{
+    width: 100%;
+    
+    transition: 0.5s;
+}
+
+.projects div{
+    background-color: rgb(46, 46, 46);
+    border-radius: 15px;
+    padding: 20px 20px;}
+
+.projects img:hover{
+    transform: scale(1.1);
+}
+
+
+.projects div:hover{
+
+    
+    transition: 0.5s;background: linear-gradient(rgb(46, 46, 46), rgb(152, 35, 43));
+
+    transform: scale(1.1);
 }
