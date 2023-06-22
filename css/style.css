@@ -13,7 +13,7 @@ html, body{
 
 nav{
     padding: 5px 5px;
-    margin: 2px 20px;
+    margin: 2px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,14 +61,14 @@ nav>div{
 #logo_text{
     position: relative;
     top: 10px;
-    left: 10px;
+    left: 30px;
 }
 
 /* <------------hero section------------> */
 
 #hero_text{
     color: white;
-    padding-top: 12%;
+    padding-top: 10%;
     height: 80vh;
     position: relative;
     
@@ -76,7 +76,8 @@ nav>div{
 }
 
 #hero_text p{
-    font-weight: 100;
+    /* font-weight: 100; */
+    margin-bottom: 20px;
     font-size: 30px;
 }
 
