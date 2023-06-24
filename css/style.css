@@ -43,8 +43,10 @@ nav ul li a{
     width: 100vw;
     height: 100vh;
     background-color: black;
+    /* background-image: url("../images/profile_newnew1.png"); */
     background-image: url("../images/profile_newnew1.png");
     background-size: cover;
+
 
 }
 
@@ -112,6 +114,7 @@ nav>div{
     color: white;
     background-color: rgb(22, 22, 22);  
     padding: 80px 100px;
+    
 }
 
 .about_col_1{
@@ -247,7 +250,7 @@ nav>div{
 /* <------------------Projects----------------> */
 
 .project_section{
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(21, 21, 21, 1);
     /* height: 40vh; */
     color: white;
     padding: 40px 60px 70px 60px;
@@ -262,7 +265,7 @@ nav>div{
 
 .projects img{
     width: 92%;
-    border-radius: 5px;
+    border-radius: 12px;
     transition: 0.5s;
 }
 
@@ -317,6 +320,142 @@ nav>div{
 .subdown{
     margin-top: 30px;
     font-size: 22px;
-    font-weight: 100;
-    margin-bottom: -20px;
+    margin-bottom: -60px; 
+    background-color: rgb(26, 26, 26);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.subdown:hover{
+    color: black;
+    background-color: rgb(127, 127, 127);  
+    transform: translateY(-5px);
+}
+
+/* <---------------contact-----------------> */
+
+#contacts_page{
+    background-color: #1b1b1b;
+    color: white;
+    padding: 40px 60px 70px 60px;
+}
+
+.contact_left{
+    flex-basis: 35%;
+    padding: 0px 10px 20px 40px;
+    font-size: 20px;
+
+}
+
+.contactme{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    width: 95%;
+    margin: 0px 5px 30px 0px;
+    font-size: 50px;
+}
+
+.contact_left i{
+    margin: 5px 20px;
+    color: orangered;
+    cursor: pointer;
+}
+
+.contact_left h1{
+    margin-left: -25px;
+}
+
+.symbols i{
+    margin: 5px;
+    font-size: 28px;
+    
+    color: rgb(183, 183, 183);
+}
+
+.symbols{
+    margin: 20px 10px 20px 15px;
+}
+
+#resume{
+    margin: 0px 10px 10px 20px;
+    padding: 10px;
+    background-color: orangered;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+}
+
+#resume:hover{
+    color: black;
+    background-color: rgb(127, 127, 127);  
+    transform: translateY(-5px);
+}
+
+.contact_right{
+    flex-basis: 60%;
+    
+}
+
+.form{
+    margin: 10px;
+    font-size: 16px;
+    padding: 8px;
+    font-weight: 600;
+    color: white;
+}
+
+form input, form textarea{
+    background-color: #3e3e3e;
+    color: white;
+    border-radius: 5px;
+}
+
+form{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+form button{
+    margin: 10px 0px -40px 10px;
+    padding: 10px;
+    background-color: orangered;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+    width: 20%;
+
+}
+
+
+form button:hover{
+    color: black;
+    background-color: rgb(127, 127, 127);  
+    transform: translateY(-5px);
+}
+
+/* <------------copyright section----------> */
+
+.copyright_sec p{
+    margin: auto;
+    width: fit-content;
+    padding: 15px 0px 15px 0px;
+}
+
+.copyright_sec{
+    background-color: #272727;
+    color: white;
+
+}
+
+.copyright_sec i{
+    color: orangered;
 }
