@@ -96,7 +96,7 @@ nav>div{
 }
 
 .name:hover{
-    color: white;
+    color: rgb(152, 0, 0);
     transform: scale(1.1);
 }
 
@@ -204,6 +204,7 @@ nav>div{
     justify-content: center;
     text-align: center;
     margin-bottom: 50px;
+    
 }
 
 .service_box{
@@ -228,7 +229,8 @@ nav>div{
 }
 
 .service_box div h1{
-    line-height: 60px;
+    margin: 20px 14px;
+    font-size: 25px;
 }
 
 .service_box div p{
@@ -259,25 +261,62 @@ nav>div{
 }
 
 .projects img{
-    width: 100%;
-    
+    width: 92%;
+    border-radius: 5px;
     transition: 0.5s;
 }
 
 .projects div{
     background-color: rgb(46, 46, 46);
     border-radius: 15px;
-    padding: 20px 20px;}
+    padding: 20px 20px;
+
+    transition: 0.5s;
+}
 
 .projects img:hover{
     transform: scale(1.1);
 }
 
 
-.projects div:hover{
+.projects_box:hover{
 
     
-    transition: 0.5s;background: linear-gradient(rgb(46, 46, 46), rgb(152, 35, 43));
+    background: linear-gradient(rgb(46, 46, 46), rgb(253, 55, 0));
 
-    transform: scale(1.1);
+    transform: translateY(-10px);
+
+}
+
+.projects_box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.projects_link a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.projects_link:hover{
+    transform: translateY(-5px);
+}
+
+.projects_link a:hover{
+    font-weight: 600;
+    font-size: 22px;
+    color: brown;
+}
+
+.subdown{
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: 100;
+    margin-bottom: -20px;
 }
