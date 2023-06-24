@@ -10,194 +10,217 @@
 </head>
 
 <body>
-    <div>
-        <!-- Navbar and Hero Page -->
-        <div id="hero_page">
-            <nav>
-                <div>
-                    <img src="./images/logo.png" alt="">
-                    <div id="logo_text">
-                        <h1 style="color: orangered;">V</h1>
-                        <h1 style="margin-left: -7px;">edant</h1>
-                        <h1 style="color: orangered;">&nbsp;T</h1>
-                        <h1 style="margin-left: -7px;">athe</h1>
+    <div class="first_div">
+        <div class="second_div">
+            <div class="third_div">
+                <!-- Navbar and Hero Page -->
+                <div id="hero_page">
+                    <nav id="navbar">
+                        <div>
+                            <img src="./images/logo.png" alt="">
+                            <div id="logo_text">
+                                <h1 style="color: orangered;">V</h1>
+                                <h1 style="margin-left: -7px;">edant</h1>
+                                <h1 style="color: orangered;">&nbsp;T</h1>
+                                <h1 style="margin-left: -7px;">athe</h1>
+                            </div>
+
+                        </div>
+                        <ul id="menu">
+                            <li><a href="#hero_page">Home</a></li>
+                            <li><a href="#about_page">About</a></li>
+                            <li><a href="#services_page">Services</a></li>
+                            <li><a href="#projects_page">Projects</a></li>
+                            <li><a href="#contacts_page">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <div id="hero_text">
+                        <p>Web Developer</p>
+                        <h1>Hi, I`m <div class="name" onclick="">Vedant </div> <br>Tathe From India</h1>
                     </div>
 
                 </div>
-                <ul>
-                    <li><a href="#hero_page">Home</a></li>
-                    <li><a href="#about_page">About</a></li>
-                    <li><a href="#services_page">Services</a></li>
-                    <li><a href="#projects_page">Projects</a></li>
-                    <li><a href="#contacts_page">Contact</a></li>
-                </ul>
-            </nav>
 
-            <div id="hero_text">
-                <p>Web Developer</p>
-                <h1>Hi, I`m <div class="name" onclick="">Vedant </div> <br>Tathe From India</h1>
+                <!-- About Section -->
+                <div id="about_page">
+                    <div class="container">
+                        <div class="row">
+                            <div class="about_col_1">
+                                <img src="./images/WhatsApp Image 2023-06-24 at 12.59.32.jpg" alt="">
+                            </div>
+                            <div class="about_col_2">
+                                <h1>About Me</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsam consequatur autem
+                                    pariatur, ab distinctio earum assumenda numquam vel explicabo! Culpa nesciunt veniam
+                                    nostrum
+                                    ratione possimus voluptates deserunt, blanditiis animi. Lorem ipsum dolor, sit amet
+                                    consectetur adipisicing elit. Aut, voluptatum dolore et, necessitatibus eaque
+                                    tempora
+                                    cum
+                                    asperiores laborum, soluta mollitia expedita placeat fugit officia. Commodi quam
+                                    quis
+                                    enim!
+                                    Sit, minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam,
+                                    quibusdam!
+                                </p>
+
+                                <div class="about_menu">
+                                    <h3 class="tab_links " id="skills" onclick="tabClick('skills')">Skills</h3>
+                                    <h3 class="tab_links active_link" id="education" onclick="tabClick('education')">
+                                        Education
+                                    </h3>
+                                </div>
+
+                                <div class="tab_content" id="skills_tab">
+
+                                    <ul>
+                                        <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing
+                                            elit.
+                                            Voluptate, cum. <br></li>
+                                        <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing
+                                            elit.
+                                            Voluptate, cum. <br></li>
+                                        <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing
+                                            elit.
+                                            Voluptate, cum. <br></li>
+                                    </ul>
+                                </div>
+                                <div class="tab_content  active_tab" id="education_tab">
+
+                                    <ul>
+                                        <li><span>Diploma in Computer Engineering</span><br>College: Government
+                                            Polytechnic,
+                                            Amravati <br>Start Year: 2021 <br>End Year: 2024<br>Percentage: (1st Year)
+                                            92%
+                                            and
+                                            2nd Year </li>
+                                        <li><span>SSC</span><br>School: Saraswati Vidyalaya, Amravati<br>Percentage:
+                                            98.40%
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Section-->
+                <div class="services" id="services_page">
+                    <div class="container">
+                        <div class="subtitle">
+                            <h1 style="color: orange;">My Services</h1>
+                        </div>
+
+                        <div class="service_box">
+                            <div>
+                                <h1>Website Development</h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias laboriosam
+                                    temporibus debitis libero! Debitis sequi ab mollitia optio delectus?</p>
+                            </div>
+                            <div>
+                                <h1>App Development</h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias laboriosam
+                                    temporibus debitis libero! Debitis sequi ab mollitia optio delectus?</p>
+                            </div>
+                            <div>
+                                <h1>Sofware Development</h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias laboriosam
+                                    temporibus debitis libero! Debitis sequi ab mollitia optio delectus?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects -->
+                <div class="project_section" id="projects_page">
+                    <div class="container">
+                        <h1 class="subtitle" style="color: orange;">My Projects</h1>
+                        <div class="projects">
+                            <div class="projects_box">
+                                <img src="./images/project1.jpg" alt="">
+                                <!-- ********************************************** -->
+                                <div class="projects_link">
+                                    <h3><a href="http://127.0.0.1:5500/">Portfolio Website</a></h3>
+                                </div>
+
+                                <!-- ****************************************************************** -->
+                            </div>
+                            <div class="projects_box">
+                                <img src="./images/project2.jpg" alt="">
+                                <!-- ********************************************** -->
+                                <div class="projects_link">
+                                    <h3><a href="http://127.0.0.1:5500/">Hostinger Clone</a></h3>
+                                </div>
+
+                                <!-- ****************************************************************** -->
+                            </div>
+                            <div class="projects_box">
+                                <img src="./images/project1.jpg" alt="">
+                                <!-- ********************************************** -->
+                                <div class="projects_link">
+                                    <h3><a href="http://127.0.0.1:5500/">Portfolio Website</a></h3>
+                                </div>
+
+                                <!-- ****************************************************************** -->
+                            </div>
+                        </div>
+                        <div class="subtitle">
+                            <button class="subdown" id="btn" onclick="btn_Move()">See More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div id="contacts_page">
+                    <div class="container">
+                        <div class="row">
+                            <div class="contact_left">
+                                <h1 class="contactme" style="color: orange;">Contact Me</h1>
+                                <p><a
+                                        href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSPFrFFVwmLxKMHvrtjtlccwRcDMSjFLWLFDBPBdhbxMkFttsvwJPFDhldHPNzQTDTqvLJNq"><i
+                                            class="fa-solid fa-paper-plane"></i></a>tathevedant70@gmail.com</p>
+                                <p><i class="fa-solid fa-phone"></i>9112877202</p>
+
+                                <div class="symbols">
+                                    <a href="https://youtube.com/@vedant_tathe"><i class="fa-brands fa-youtube"></i></a>
+                                    <a href="https://twitter.com/vedant_tathe_07"><i
+                                            class="fa-brands fa-square-twitter"></i></a>
+                                    <a href="https://www.instagram.com/vedant_tathe_07/"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/vedant-tathe-04b5a2262/"><i
+                                            class="fa-brands fa-linkedin"></i></a>
+                                </div>
+
+                                <a href="./images/Vedant_Tathe_Resume.pdf" download><button name="download_resume"
+                                        download id="resume">Download Resume</button></a>
+                            </div>
+                            <div class="contact_right">
+                                <form action="https://google.com" method="post">
+                                    <input class="form" type="text" name="Name" id="name" placeholder="Your Name"
+                                        required>
+                                    <input class="form" type="text" name="Email" id="email" placeholder="Your Email"
+                                        required>
+                                    <textarea class="form" name="Message" id="message" rows="6"
+                                        placeholder="Your Message"></textarea>
+                                    <button class="form" type="submit" name="Button" id="button">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copyright Section -->
+                <div class="copyright_sec">
+                    <p>Copyright <i class="fa-solid fa-copyright"></i> Vedant. Developed By <span class="name">Vedant
+                            Tathe</span></p>
+                </div>
             </div>
 
-        </div>
-
-        <!-- About Section -->
-        <div id="about_page">
-            <div class="container">
-                <div class="row">
-                    <div class="about_col_1">
-                        <img src="./images/profile_new.png" alt="">
-                    </div>
-                    <div class="about_col_2">
-                        <h1>About Me</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsam consequatur autem
-                            pariatur, ab distinctio earum assumenda numquam vel explicabo! Culpa nesciunt veniam nostrum
-                            ratione possimus voluptates deserunt, blanditiis animi. Lorem ipsum dolor, sit amet
-                            consectetur adipisicing elit. Aut, voluptatum dolore et, necessitatibus eaque tempora cum
-                            asperiores laborum, soluta mollitia expedita placeat fugit officia. Commodi quam quis enim!
-                            Sit, minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, quibusdam!
-                        </p>
-
-                        <div class="about_menu">
-                            <h3 class="tab_links " id="skills" onclick="tabClick('skills')">Skills</h3>
-                            <h3 class="tab_links active_link" id="education" onclick="tabClick('education')">Education
-                            </h3>
-                        </div>
-
-                        <div class="tab_content" id="skills_tab">
-
-                            <ul>
-                                <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Voluptate, cum. <br></li>
-                                <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Voluptate, cum. <br></li>
-                                <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Voluptate, cum. <br></li>
-                            </ul>
-                        </div>
-                        <div class="tab_content  active_tab" id="education_tab">
-
-                            <ul>
-                                <li><span>Diploma in Computer Engineering</span><br>College: Government Polytechnic,
-                                    Amravati <br>Start Year: 2021 <br>End Year: 2024<br>Percentage: (1st Year) 92% and
-                                    2nd Year </li>
-                                <li><span>SSC</span><br>School: Saraswati Vidyalaya, Amravati<br>Percentage: 98.40%</li>
-                            </ul>
-                        </div>
-
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Services Section-->
-        <div class="services" id="services_page">
-            <div class="container">
-                <div class="subtitle">
-                    <h1 style="color: orange;">My Services</h1>
-                </div>
-
-                <div class="service_box">
-                    <div>
-                        <h1>Website Development</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias laboriosam
-                            temporibus debitis libero! Debitis sequi ab mollitia optio delectus?</p>
-                    </div>
-                    <div>
-                        <h1>App Development</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias laboriosam
-                            temporibus debitis libero! Debitis sequi ab mollitia optio delectus?</p>
-                    </div>
-                    <div>
-                        <h1>Sofware Development</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias laboriosam
-                            temporibus debitis libero! Debitis sequi ab mollitia optio delectus?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Projects -->
-        <div class="project_section" id="projects_page">
-            <div class="container">
-                <h1 class="subtitle" style="color: orange;">My Projects</h1>
-                <div class="projects">
-                    <div class="projects_box">
-                        <img src="./images/project1.jpg" alt="">
-                        <!-- ********************************************** -->
-                        <div class="projects_link">
-                            <h3><a href="http://127.0.0.1:5500/">Portfolio Website</a></h3>
-                        </div>
-
-                        <!-- ****************************************************************** -->
-                    </div>
-                    <div class="projects_box">
-                        <img src="./images/project1.jpg" alt="">
-                        <!-- ********************************************** -->
-                        <div class="projects_link">
-                            <h3><a href="http://127.0.0.1:5500/">Portfolio Website</a></h3>
-                        </div>
-
-                        <!-- ****************************************************************** -->
-                    </div>
-                    <div class="projects_box">
-                        <img src="./images/project1.jpg" alt="">
-                        <!-- ********************************************** -->
-                        <div class="projects_link">
-                            <h3><a href="http://127.0.0.1:5500/">Portfolio Website</a></h3>
-                        </div>
-
-                        <!-- ****************************************************************** -->
-                    </div>
-                </div>
-                <div class="subtitle">
-                    <button class="subdown" id="btn" onclick="btn_Move()">See More</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Contact Section -->
-        <div id="contacts_page">
-            <div class="container">
-                <div class="row">
-                    <div class="contact_left">
-                        <h1 class="contactme" style="color: orange;">Contact Me</h1>
-                        <p><a
-                                href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSPFrFFVwmLxKMHvrtjtlccwRcDMSjFLWLFDBPBdhbxMkFttsvwJPFDhldHPNzQTDTqvLJNq"><i
-                                    class="fa-solid fa-paper-plane"></i></a>tathevedant70@gmail.com</p>
-                        <p><i class="fa-solid fa-phone"></i>9112877202</p>
-
-                        <div class="symbols">
-                            <a href="https://youtube.com/@vedant_tathe"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="https://twitter.com/vedant_tathe_07"><i
-                                    class="fa-brands fa-square-twitter"></i></a>
-                            <a href="https://www.instagram.com/vedant_tathe_07/"><i
-                                    class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/vedant-tathe-04b5a2262/"><i
-                                    class="fa-brands fa-linkedin"></i></a>
-                        </div>
-
-                        <a href="./images/Vedant_Tathe_Resume.pdf" download><button name="download_resume" download
-                                id="resume">Download Resume</button></a>
-                    </div>
-                    <div class="contact_right">
-                        <form action="https://google.com" method="post">
-                            <input class="form" type="text" name="Name" id="name" placeholder="Your Name" required>
-                            <input class="form" type="text" name="Email" id="email" placeholder="Your Email" required>
-                            <textarea class="form" name="Message" id="message" rows="6"
-                                placeholder="Your Message"></textarea>
-                            <button class="form" type="submit" name="Button" id="button">Submit</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Copyright Section -->
-        <div class="copyright_sec">
-            <p>Copyright <i class="fa-solid fa-copyright"></i> Vedant. Developed By <span class="name">Vedant Tathe</span></p>
         </div>
 
     </div>
@@ -225,6 +248,41 @@
 
         }
 
+
+        //navbar enable after scroll
+
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                var nav = document.getElementById("navbar");
+                var menu = document.getElementById("menu");
+
+                nav.classList.add("nav_scroll");
+                menu.classList.add("menu_scroll");
+            } else {
+                document.getElementById("navbar").classList.remove("nav_scroll");
+                document.getElementById("menu").classList.remove("menu_scroll");
+            }
+        }
+
+        // scroll effect on link click
+
+        let anchorList =
+            document.querySelectorAll('a[href^="#"]');
+
+        for (link of anchorList) {
+
+            link.onclick = function (e) {
+                e.preventDefault();
+                let destination =
+                    document.querySelector(this.hash);
+                destination.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
     </script>
 </body>
 
