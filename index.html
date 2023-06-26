@@ -26,13 +26,18 @@
                             </div>
 
                         </div>
-                        <ul id="menu">
-                            <li><a href="#hero_page">Home</a></li>
-                            <li><a href="#about_page">About</a></li>
-                            <li><a href="#services_page">Services</a></li>
-                            <li><a href="#projects_page">Projects</a></li>
-                            <li><a href="#contacts_page">Contact</a></li>
-                        </ul>
+                        <div id="menu">
+                            <ul id="menubar">
+                                <i class="fa-solid fa-xmark" onclick="menuClose()"></i>
+
+                                <li><a href="#hero_page">Home</a></li>
+                                <li><a href="#about_page">About</a></li>
+                                <li><a href="#services_page">Services</a></li>
+                                <li><a href="#projects_page">Projects</a></li>
+                                <li><a href="#contacts_page">Contact</a></li>
+                            </ul>
+                            <i class="fa-solid fa-bars" onclick="menuOpen()"></i>
+                        </div>
                     </nav>
 
                     <div id="hero_text">
@@ -51,18 +56,10 @@
                             </div>
                             <div class="about_col_2">
                                 <h1>About Me</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsam consequatur autem
-                                    pariatur, ab distinctio earum assumenda numquam vel explicabo! Culpa nesciunt veniam
-                                    nostrum
-                                    ratione possimus voluptates deserunt, blanditiis animi. Lorem ipsum dolor, sit amet
-                                    consectetur adipisicing elit. Aut, voluptatum dolore et, necessitatibus eaque
-                                    tempora
-                                    cum
-                                    asperiores laborum, soluta mollitia expedita placeat fugit officia. Commodi quam
-                                    quis
-                                    enim!
-                                    Sit, minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam,
-                                    quibusdam!
+                                <p>
+                                    Hi, I`am Vedant Tathe. Currently studying in final year Government Polytechnic,
+                                    Amravati. Learning various skills like Web Development, Software and Android
+                                    Application Development.
                                 </p>
 
                                 <div class="about_menu">
@@ -181,6 +178,7 @@
                         <div class="row">
                             <div class="contact_left">
                                 <h1 class="contactme" style="color: orange;">Contact Me</h1>
+
                                 <p><a
                                         href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSPFrFFVwmLxKMHvrtjtlccwRcDMSjFLWLFDBPBdhbxMkFttsvwJPFDhldHPNzQTDTqvLJNq"><i
                                             class="fa-solid fa-paper-plane"></i></a>tathevedant70@gmail.com</p>
@@ -207,7 +205,9 @@
                                         required>
                                     <textarea class="form" name="Message" id="message" rows="6"
                                         placeholder="Your Message"></textarea>
-                                    <button class="form" type="submit" name="Button" id="button">Submit</button>
+
+                                    <div> <button class="form" type="submit" name="Button" id="button">Submit</button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -224,7 +224,6 @@
         </div>
 
     </div>
-
 
 
 
@@ -257,13 +256,16 @@
         function scrollFunction() {
             if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
                 var nav = document.getElementById("navbar");
+                var menubar = document.getElementById("menubar");
                 var menu = document.getElementById("menu");
 
                 nav.classList.add("nav_scroll");
-                menu.classList.add("menu_scroll");
+                menubar.classList.add("menu_scroll");
+                menu.classList.add("disp_conetents");
             } else {
                 document.getElementById("navbar").classList.remove("nav_scroll");
-                document.getElementById("menu").classList.remove("menu_scroll");
+                document.getElementById("menubar").classList.remove("menu_scroll");
+                document.getElementById("menu").classList.remove("disp_conetents");
             }
         }
 
@@ -281,8 +283,42 @@
                 destination.scrollIntoView({
                     behavior: 'smooth'
                 });
+                if(window.innerWidth <= 1058)
+                bars.style.right = "-850px";
+            
             }
         }
+
+
+
+        //menubar for phones
+        var bars = document.getElementById("menubar");
+        var c = false;
+        function menuOpen() {
+            bars.style.right = "0"
+            c = true;
+        }
+        function menuClose() {
+            bars.style.right = "-850px";
+            c = false;
+        }
+
+        //close menu if user clicks outside the menu
+        
+            document.addEventListener("click", function (event) {
+
+                if (event.target.closest("#menu"))
+                    return
+                else
+                if (c == true) 
+                    bars.style.right = "-850px"
+
+            });
+
+        
+
+
+
     </script>
 </body>
 

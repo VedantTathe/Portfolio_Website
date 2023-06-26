@@ -65,7 +65,7 @@ nav div h1 {
     display: inline-block;
 }
 
-nav>div {
+nav div:first-child {
     display: flex;
     height: 100%;
 
@@ -90,6 +90,10 @@ nav>div {
 .menu_scroll {
     position: fixed;
     right: 5vh;
+}
+
+.disp_conetents{
+    display: contents;
 }
 
 /* <------------hero section------------> */
@@ -410,7 +414,7 @@ nav>div {
 }
 
 .contact_left h1 {
-    margin-left: -25px;
+    margin-left: -18px;
 }
 
 .symbols i {
@@ -485,6 +489,14 @@ form button:hover {
     transform: translateY(-5px);
 }
 
+form>div{
+    text-align: center;
+}
+
+form button{width: 30%;
+    
+
+}
 /* <------------copyright section----------> */
 
 .copyright_sec p {
@@ -503,10 +515,17 @@ form button:hover {
     color: orangered;
 }
 
+/* <---------bars and close bar icon--------> */
 
-/* <---making website responsive---> */
+#navbar i {
+    display: none;
+    /* background-color: red; */
+}
 
-@media only screen and (min-width: 1350px) {
+
+/* <---making website responsive for larger screens---> */
+
+@media only screen and (min-width: 1411px) {
 
     .second_div {
         margin: auto;
@@ -527,12 +546,187 @@ form button:hover {
         height: fit-content;
     }
 
-    .nav_scroll{
+    .nav_scroll {
         width: 70%;
     }
+
     .menu_scroll {
         position: fixed;
-        right: 35vh;
+        right: 50vh;
+        /* right: 34vh; */
+    }
+  
+}
+
+
+/* <---making website responsive for smaller screens---> */
+
+#navbar i:hover{
+    box-shadow: 0 0 1.25rem 0.625rem hsl(0deg 0% 15.38%);
+    /* display: inline; */
+    color: brown;
+    background-color: #2a2827;
+}
+
+@media only screen and (max-width: 1058px) {
+
+    .second_div {
+        margin: auto;
+        width: 99%;
     }
 
+    .first_div {
+        background-color: #1f1f1f;
+    }
+
+    .third_div {
+        box-shadow: 0 0 1.25rem 0.625rem hsl(0deg 0% 15.38%);
+    }
+
+    #hero_page {
+        width: auto;
+        height: fit-content;
+    }
+
+    .nav_scroll {
+        width: 99%;
+
+    }
+
+    #hero_page {
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    #navbar i{
+        display: block;
+    }
+
+    #navbar i {
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .nav_scroll .fa-bars {
+
+        margin-right: 10vh;
+    }
+
+    .about_menu {
+        margin: 20px 10px;
+    }
+
+    .about_menu h3 {
+        margin: 0px 40px 0px -10px;
+    }
+
+
+
+    .contact_left h1 {
+        font-size: 4vw;
+    }
+    .contact_left p {
+        display: flex;
+    }
+
+    #about_page img {
+        width: 120%;
+    }
+
+    #menubar{
+        background-color: #ca551c;
+        height: 100vh;
+        width: 60vw;
+        margin: auto;
+        position: fixed;
+        /* right: 0; */
+        right: -850px;
+        top: 0;
+        opacity: 92%;
+        z-index: 999;
+        border: 2px solid rgb(180, 81, 5);
+        box-shadow: 0 0 1.25rem 0.625rem hsla(16, 100%, 50%, 0.516);
+        padding: 3vw;
+        transition: right 0.5s;
+
+    }
+
+    #menubar li{
+        display: block;
+        padding: 5vh;
+        border: 1px solid rgba(158, 47, 47, 0.459);
+        text-align: center;
+    }
+
+
+
+    #menubar li:hover{
+        background-color: rgb(202, 117, 27);
+    
+    }
+
+    #menubar a{
+        width: 100%;
+        display: block;
+        margin: 0;
+        
+    }
+
+    #menubar a:hover{
+        box-shadow: 0 0 1.25rem 0.625rem hsl(0deg 0% 15.38%);
+   
+    }
+
+    #menubar i{
+    /* border: 1px solid rgb(180, 81, 5); */
+    text-align: center;
+    }
+}
+
+
+
+@media only screen and (max-width: 950px) {
+
+    .nav_scroll .fa-bars {
+
+        margin-right: 5vh;
+    }
+
+    #navbar{
+        margin-left: 0;
+        padding-left: 10vw;
+    }
+
+
+    .row{
+        border: 1px solid red;
+        display: block;
+    }
+    .contact_left{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        border: 1px solid red;
+    }
+
+
+    .contact_left p{
+        margin: auto;
+        width: fit-content;
+    }
+    
+    .contact_left h1{
+        /* color: red; */
+        font-size: 7vw;
+        margin: auto;
+        padding: 0px 0px 30px 0px;
+    }
+
+
+
+}
+
+#about_page img {
+    width: 20px;
+/* 120% */
 }
