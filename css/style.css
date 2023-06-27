@@ -54,11 +54,19 @@ nav ul li a:hover {
 }
 
 #hero_page {
-    width: 100vw;
+    /* width: 100vw;
     height: 100vh;
     background-color: black;
     background-image: url("../images/profile_newnew1.png");
-    background-size: cover;
+    background-size: cover; */
+    width: 100vw;
+    /* height: 100vh; */
+    height: auto;
+    background-color: black;
+    background-image: url("../images/profile_mobile.png");
+    background-size: 80vh;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 nav div h1 {
@@ -92,7 +100,7 @@ nav div:first-child {
     right: 5vh;
 }
 
-.disp_conetents{
+.disp_conetents {
     display: contents;
 }
 
@@ -100,11 +108,15 @@ nav div:first-child {
 
 #hero_text {
     color: white;
+    flex-direction: column;
+    display: flex;
     padding-top: 10%;
     height: 80vh;
     position: relative;
-
     margin-left: 10%;
+    justify-content: center;
+    margin: 0px 7vw;
+    padding: 0;
 }
 
 #hero_text p {
@@ -489,14 +501,16 @@ form button:hover {
     transform: translateY(-5px);
 }
 
-form>div{
+form>div {
     text-align: center;
 }
 
-form button{width: 30%;
-    
+form button {
+    width: 30%;
+
 
 }
+
 /* <------------copyright section----------> */
 
 .copyright_sec p {
@@ -555,13 +569,17 @@ form button{width: 30%;
         right: 50vh;
         /* right: 34vh; */
     }
-  
+
 }
 
 
 /* <---making website responsive for smaller screens---> */
 
-#navbar i:hover{
+#hero_text h1{
+    width: auto;
+}
+
+#navbar i:hover {
     box-shadow: 0 0 1.25rem 0.625rem hsl(0deg 0% 15.38%);
     /* display: inline; */
     color: brown;
@@ -582,11 +600,11 @@ form button{width: 30%;
     .third_div {
         box-shadow: 0 0 1.25rem 0.625rem hsl(0deg 0% 15.38%);
     }
-
+/* 
     #hero_page {
         width: auto;
         height: fit-content;
-    }
+    } */
 
     .nav_scroll {
         width: 99%;
@@ -594,11 +612,13 @@ form button{width: 30%;
     }
 
     #hero_page {
-        background-size: 100%;
-        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+        
+        background-position: bottom right;
     }
 
-    #navbar i{
+    #navbar i {
         display: block;
     }
 
@@ -612,9 +632,9 @@ form button{width: 30%;
         margin-right: 10vh;
     }
 
-    .about_menu {
+    /* .about_menu {
         margin: 20px 10px;
-    }
+    } */
 
     .about_menu h3 {
         margin: 0px 40px 0px -10px;
@@ -625,6 +645,7 @@ form button{width: 30%;
     .contact_left h1 {
         font-size: 4vw;
     }
+
     .contact_left p {
         display: flex;
     }
@@ -633,10 +654,10 @@ form button{width: 30%;
         width: 120%;
     }
 
-    #menubar{
+    #menubar {
         background-color: #ca551c;
         height: 100vh;
-        width: 60vw;
+        width: 40vw;
         margin: auto;
         position: fixed;
         /* right: 0; */
@@ -651,7 +672,7 @@ form button{width: 30%;
 
     }
 
-    #menubar li{
+    #menubar li {
         display: block;
         padding: 5vh;
         border: 1px solid rgba(158, 47, 47, 0.459);
@@ -660,27 +681,47 @@ form button{width: 30%;
 
 
 
-    #menubar li:hover{
+    #menubar li:hover {
         background-color: rgb(202, 117, 27);
-    
+
     }
 
-    #menubar a{
+    #menubar a {
         width: 100%;
         display: block;
         margin: 0;
-        
+
     }
 
-    #menubar a:hover{
+    #menubar a:hover {
         box-shadow: 0 0 1.25rem 0.625rem hsl(0deg 0% 15.38%);
-   
+
     }
 
-    #menubar i{
-    /* border: 1px solid rgb(180, 81, 5); */
-    text-align: center;
+    #menubar i {
+        /* border: 1px solid rgb(180, 81, 5); */
+        text-align: center;
     }
+
+    
+#hero_text {
+    padding-top: 11%;
+    margin-left: 10%;
+}
+
+#hero_text p {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+
+    
+    #hero_text h1 {
+        font-size: 50px;
+        word-wrap: break-word;
+        width: 42vw;
+    }
+    
 }
 
 
@@ -692,41 +733,203 @@ form button{width: 30%;
         margin-right: 5vh;
     }
 
-    #navbar{
+    #navbar {
         margin-left: 0;
         padding-left: 10vw;
     }
 
+    #menubar {
+        width: 60vw;
+    }
 
-    .row{
-        border: 1px solid red;
+
+    .row {
         display: block;
     }
-    .contact_left{
+
+    .contact_left {
         margin: 0;
         padding: 0;
         text-align: center;
-        border: 1px solid red;
     }
 
 
-    .contact_left p{
+    .contact_left p {
         margin: auto;
         width: fit-content;
     }
-    
-    .contact_left h1{
+
+    .contact_left h1 {
         /* color: red; */
         font-size: 7vw;
         margin: auto;
         padding: 0px 0px 30px 0px;
     }
 
+    #about_page img {
+        width: 60%;
+        margin: 0 20% 5% 20%;
+    }
 
+    #about_page{
+        padding: 5vw 10vw;
+    }
+
+    .about_col_1{
+        display: flex;
+        justify-content: center;
+    }   
+        
+    .about_col_2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 50px 15px 50px;
+        box-shadow: 0 0 1.25rem 0.625rem hsl(0deg 0% 15.38%);
+        border-radius: 10px;
+    }
+
+    .about_col_2 span{line-height: normal;
+        display: block;
+        margin: 16px 0px 0px 0px;
+    }
+
+    .tab_content{
+        width: 100%;
+    }
+
+    .contact_left::after {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background-color: #313131;
+        position: absolute;
+        left: 0;
+        margin: 50px 0px;
+        transition: 0.5s;
+    }
+
+    .about_col_2 h1{
+        color: orange;
+    }
+
+   
+#hero_page {
+    width: 100vw;
+    height: 100vh;
+    
+}
+}
+
+
+@media only screen and (max-width:790px)
+{
+    .about_menu{
+        font-size: 18px;
+        margin: 0px 0px 14px -50%;
+    } 
+}
+
+
+
+@media only screen and (max-width: 680px) {
+
+    #hero_page{
+        background-image: url("../images/profile_mobile1.png");
+        background-size: 70vh;
+    }
+    #hero_text h1 {
+        font-size: 40px;
+        word-wrap: break-word;
+        
+    }
+    #hero_text p{
+        font-size: 27px;
+    }
+    
+
+    
+}
+@media only screen and (max-width: 590px) {
+
+    #hero_page{
+        background-size: 65vh;
+    }
+    #hero_text h1 {
+        font-size: 35px;
+    }
+    #hero_text {
+        padding-top: 18%;
+    }
+    
 
 }
 
-#about_page img {
-    width: 20px;
-/* 120% */
+#hero_img{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 930px)
+{
+    #hero_page{
+        background-image: none;
+        background-color: black;
+        width: 100vw;
+        height: fit-content;
+    }
+
+    #about_img{
+        display: none;
+    }
+
+    #hero_img{
+        display: block;
+    }
+
+    #hero_img{
+    width: 70vw;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 0.625rem 0.25rem #3d3d3d;
+    }
+
+    #hero_text{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        text-align: center;
+        align-items: center;
+        padding: 40px;
+        margin: 0;
+    }
+}
+
+
+
+@media only screen and (max-width: 450px){
+    #hero_text h1{
+        font-size: 30px;
+    }
+    #hero_text p{
+        font-size: 20px;
+    }
+
+    .about_col_2{
+        padding: 18px 5px 18px 5px;
+    }
+
+    .project_section{
+        padding: 20px 21px 20px 21px;
+    }
+    #contacts_page{
+        padding: 20px 22px 20px 22px;
+    }
+    .services{
+        padding: 20px 22px 20px 22px;
+    }
 }

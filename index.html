@@ -40,6 +40,9 @@
                         </div>
                     </nav>
 
+                    <div class="hero_img_div">
+                        <img id="hero_img" src="./images/WhatsApp Image 2023-06-24 at 12.59.32.jpg" alt="">
+                    </div>
                     <div id="hero_text">
                         <p>Web Developer</p>
                         <h1>Hi, I`m <div class="name" onclick="">Vedant </div> <br>Tathe From India</h1>
@@ -52,7 +55,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="about_col_1">
-                                <img src="./images/WhatsApp Image 2023-06-24 at 12.59.32.jpg" alt="">
+                                <img id="about_img" src="./images/WhatsApp Image 2023-06-24 at 12.59.32.jpg" alt="">
                             </div>
                             <div class="about_col_2">
                                 <h1>About Me</h1>
@@ -61,6 +64,7 @@
                                     Amravati. Learning various skills like Web Development, Software and Android
                                     Application Development.
                                 </p>
+
 
                                 <div class="about_menu">
                                     <h3 class="tab_links " id="skills" onclick="tabClick('skills')">Skills</h3>
@@ -262,6 +266,7 @@
                 nav.classList.add("nav_scroll");
                 menubar.classList.add("menu_scroll");
                 menu.classList.add("disp_conetents");
+
             } else {
                 document.getElementById("navbar").classList.remove("nav_scroll");
                 document.getElementById("menubar").classList.remove("menu_scroll");
@@ -283,9 +288,11 @@
                 destination.scrollIntoView({
                     behavior: 'smooth'
                 });
-                if(window.innerWidth <= 1058)
-                bars.style.right = "-850px";
-            
+                if (window.innerWidth <= 1058)
+                    bars.style.right = "-850px";
+               
+
+
             }
         }
 
@@ -293,33 +300,139 @@
 
         //menubar for phones
         var bars = document.getElementById("menubar");
-        var c = false;
+        var menu_open = false;
         function menuOpen() {
             bars.style.right = "0"
-            c = true;
+            menu_open = true;
         }
         function menuClose() {
             bars.style.right = "-850px";
-            c = false;
+            menu_open = false;
         }
 
         //close menu if user clicks outside the menu
-        
-            document.addEventListener("click", function (event) {
 
-                if (event.target.closest("#menu"))
-                    return
-                else
-                if (c == true) 
+        document.addEventListener("click", function (event) {
+
+            if (event.target.closest("#menu"))
+                return
+            else
+                if (menu_open == true)
                     bars.style.right = "-850px"
 
-            });
+        });
 
-        
-
+        //add scroll menu if window is maximized after opened in small screen
+        window.addEventListener("resize", function (event) {
+            if(window.innerWidth > 1058)
+            bars.style.right = "0";
+            else if(window.innerWidth <= 1058)
+            bars.style.right = "-850px";
+            
+        });
 
 
     </script>
 </body>
 
 </html>
+
+
+
+<!-- 
+
+@media only screen and (max-width: 800px) and (min-width: 680px) {
+
+    #hero_text h1{
+        font-size: 45px;
+    }
+        
+    }
+    
+
+@media only screen and (max-width: 680px) {
+
+    #hero_page{
+        background-image: url("../images/profile_mobile1.png");
+        background-size: 70vh;
+    }
+    #hero_text h1 {
+        font-size: 40px;
+        word-wrap: break-word;
+        /* width: 35vw; */
+    }
+    #hero_text p{
+        font-size: 27px;
+    }
+    
+
+    
+}
+@media only screen and (max-width: 590px) {
+
+    #hero_page{
+        background-size: 65vh;
+    }
+    #hero_text h1 {
+        font-size: 35px;
+    }
+    #hero_text {
+        padding-top: 18%;
+    }
+    
+
+}
+
+
+@media only screen and (max-width: 510px) {
+
+    #hero_page{
+        background-size: 65vh;
+        background-position: 102%;
+    }
+    #hero_text h1 {
+        font-size: 30px;
+    } #hero_text p {
+        font-size: 23px;
+    }
+    #hero_text {
+        padding-top: 25%;
+        /* width: 56vw; */
+    }
+    
+
+}
+
+
+@media only screen and (max-width: 445px) {
+#hero_page{
+    
+    background-image: url("../images/2.png");
+    background-size: 55vh;
+    background-position: bottom right;
+
+}
+
+#hero_text {
+    padding-top: 25%;
+}
+.about_menu{
+    font-size: 18px;
+    margin: 0px 0px 14px -50%;
+} 
+
+#navbar{
+    margin-right: 40px;
+}
+}
+
+@media only screen and (max-width: 385px) {
+#hero_page h1{
+    font-size: 25px;
+}
+
+#hero_page p{
+    word-wrap: wrap;
+    width: 118px;
+}
+} -->
