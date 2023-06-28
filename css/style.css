@@ -60,13 +60,15 @@ nav ul li a:hover {
     background-image: url("../images/profile_newnew1.png");
     background-size: cover; */
     width: 100vw;
-    /* height: 100vh; */
-    height: auto;
+    height: 100vh;
     background-color: black;
-    background-image: url("../images/profile_mobile.png");
+    /* background-image: url("../images/profile_mobile.png"), linear-gradient(-310deg, rgb(3 0 63) 0%, rgba(255,80,0,1) 183%, rgba(0,0,0,1) 0%);
     background-size: 80vh;
     background-position: right;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background: linear-gradient(-310deg, rgb(3 0 63) 0%, rgba(255,80,0,1) 183%, rgba(0,0,0,1) 0%);
+    
+overflow: hidden;
 }
 
 nav div h1 {
@@ -143,19 +145,41 @@ nav div:first-child {
     transform: scale(1.1);
 }
 
-.hero_symbols i{
-        margin: 5px;
+.hero_symbols i {
+    margin: 5px;
     font-size: 28px;
 
     color: rgb(183, 183, 183);
 }
 
-.hero_symbols{
-    
+.hero_symbols {
+
     margin: 10px 0px 10px 0px;
 }
 
+.main{
 
+display: flex;
+width: 100vw;
+height: 90vh;
+
+overflow: hidden;
+}
+#hero_text{
+    flex-basis: 35%;
+}
+
+#hero_desk_img{
+    flex-basis: 55%;
+    /* width: 100%; */
+}
+
+#hero_desk_img img{
+    height: 100vh;
+    /* position: absolute; */
+    height: 100%;
+
+}
 /* About Page */
 
 .row {
@@ -246,30 +270,37 @@ nav div:first-child {
 }
 
 progress {
-    border: 1px solid orange;
-    
- }
- progress::-webkit-progress-bar {
-    background-color: gray;
- }
- progress::-webkit-progress-value {
-    background-color: rgb(212, 78, 0);
- }
+    border: 3px solid rgb(52, 52, 52);
 
- .tab_arrange{
+}
+
+progress::-webkit-progress-bar {
+    background-color: gray;
+}
+
+progress::-webkit-progress-value {
+    background-color: rgb(212, 78, 0);
+}
+
+.tab_arrange {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding-right: 20px;
- }  
 
- #btn1-alt{
-    display: none;
- }
+}
 
- #btn1{
+#btn1-alt {
     display: none;
- }
+}
+
+#btn1 {
+    display: none;
+}
+
+.skills_small {
+    display: none;
+}
 
 /* <--------------------services------------------> */
 
@@ -302,7 +333,6 @@ progress {
     background-color: rgb(46, 46, 46);
     border-radius: 15px;
     padding: 20px 20px;
-
     transition: 0.5s;
 }
 
@@ -366,6 +396,8 @@ progress {
     background-color: #ca551c;
     border-radius: 15px;
     padding: 10px 10px;
+    width: 80%;
+    margin: auto;
     border: 1px solid black;
     transition: 0.5s;
 }
@@ -434,11 +466,11 @@ progress {
 }
 
 
-#btn2-alt{
+#btn2-alt {
     display: none;
 }
 
-.projects_box_hide{
+.projects_box_hide {
     display: none;
 }
 
@@ -624,7 +656,7 @@ form button {
 
 /* <---making website responsive for smaller screens---> */
 
-#hero_text h1{
+#hero_text h1 {
     width: auto;
 }
 
@@ -649,7 +681,8 @@ form button {
     .third_div {
         box-shadow: 0 0 1.25rem 0.625rem hsl(0deg 0% 15.38%);
     }
-/* 
+
+    /* 
     #hero_page {
         width: auto;
         height: fit-content;
@@ -663,7 +696,7 @@ form button {
     #hero_page {
         width: 100vw;
         height: 100vh;
-        
+
         background-position: bottom right;
     }
 
@@ -699,9 +732,9 @@ form button {
         display: flex;
     }
 
-    #about_page img {
-        width: 120%;
-    }
+    /* #about_page img {
+        width: 100%;
+    } */
 
     #menubar {
         background-color: #ca551c;
@@ -752,25 +785,25 @@ form button {
         text-align: center;
     }
 
-    
-#hero_text {
-    padding-top: 11%;
-    margin-left: 10%;
-}
 
-#hero_text p {
-    margin-bottom: 20px;
-    font-size: 30px;
-}
+    #hero_text {
+        padding-top: 11%;
+        margin-left: 10%;
+    }
+
+    #hero_text p {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
 
 
-    
+
     #hero_text h1 {
         font-size: 50px;
         word-wrap: break-word;
         width: 42vw;
     }
-    
+
 }
 
 
@@ -815,21 +848,21 @@ form button {
         padding: 0px 0px 30px 0px;
     }
 
-    #about_page img {
+    /* #about_page img {
         width: 60%;
         margin: 0 20% 5% 20%;
-    }
+    } */
 
-    #about_page{
+    #about_page {
         padding: 5vw 10vw;
     }
 
-    .about_col_1{
+    .about_col_1 {
         display: flex;
         justify-content: center;
-    }   
-        
-    .about_col_2{
+    }
+
+    .about_col_2 {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -838,127 +871,136 @@ form button {
         border-radius: 10px;
     }
 
-    .about_col_2 span{line-height: normal;
+    .about_col_2 span {
+        line-height: normal;
         display: block;
         margin: 16px 0px 0px 0px;
     }
 
-    .tab_content{
+    .tab_content {
         width: 100%;
     }
 
     .contact_left::after {
         content: '';
-        width: 100%;
+        width: 80%;
         height: 3px;
         background-color: #313131;
         position: absolute;
         left: 0;
-        margin: 50px 0px;
+        margin: 50px 10%;
         transition: 0.5s;
     }
 
-    .about_col_2 h1{
+    .about_col_2 h1 {
         color: orange;
     }
 
-   
-#hero_page {
-    width: 100vw;
-    height: 100vh;
-    
-}
+
+    #hero_page {
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    #hero_desk_img{
+        display: none;
+    }
 }
 
 
-@media only screen and (max-width:790px)
-{
-    .about_menu{
+@media only screen and (max-width:790px) {
+    .about_menu {
         font-size: 18px;
         margin: 0px 0px 14px -50%;
-    } 
+    }
 }
 
 
 
 @media only screen and (max-width: 680px) {
 
-    #hero_page{
-        background-image: url("../images/profile_mobile1.png");
+    #hero_page {
+        background-image: url("../images/1.png");
         background-size: 70vh;
     }
+
     #hero_text h1 {
         font-size: 40px;
         word-wrap: break-word;
-        
+
     }
-    #hero_text p{
+
+    #hero_text p {
         font-size: 27px;
     }
-    
-    .tab_arrange{
+
+    .tab_arrange {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
         align-items: center;
-    } 
-    
-    #btn1{
+    }
+
+    #btn1 {
         display: block;
     }
 
-    .more_skills{
+    .more_skills {
         display: none;
     }
 }
+
 @media only screen and (max-width: 590px) {
 
-    #hero_page{
+    #hero_page {
         background-size: 65vh;
     }
+
     #hero_text h1 {
         font-size: 35px;
     }
+
     #hero_text {
         padding-top: 18%;
     }
-  
+
 
 }
 
-#hero_img{
+#hero_img {
     display: none;
 }
 
 
 
-@media only screen and (max-width: 930px)
-{
-    #hero_page{
+@media only screen and (max-width: 950px) {
+    #hero_page {
         background-image: none;
         background-color: black;
         width: 100vw;
         height: fit-content;
+        background: linear-gradient(-310deg, rgb(3 0 63) 0%, rgba(255,80,0,1) 183%, rgba(0,0,0,1) 0%);
     }
 
-    #about_img{
+    #about_img {
         display: none;
     }
 
-    #hero_img{
+    #hero_img {
         display: block;
     }
 
-    #hero_img{
-    width: 70vw;
-    margin: auto;
-    border-radius: 10px;
-    margin-top: 30px;
-    box-shadow: 0px 0px 0.625rem 0.25rem #3d3d3d;
+    #hero_img {
+        width: 70vw;
+        margin: auto;
+        border-radius: 10px;
+        margin-top: 30px;
+        box-shadow: 0px 0px 0.625rem 0.25rem #3d3d3d;
     }
 
-    #hero_text{
+    #hero_text {
         position: relative;
         width: 100%;
         display: flex;
@@ -966,50 +1008,100 @@ form button {
         height: fit-content;
         text-align: center;
         align-items: center;
-          padding: 40px 40px 0px 40px;
-        margin: 0;
+        padding: 40px 40px 0px 40px;
+        margin: auto;
     }
 }
 
 
 
-@media only screen and (max-width: 450px){
-    #hero_text h1{
+@media only screen and (max-width: 450px) {
+    #hero_text h1 {
         font-size: 30px;
         width: 170px;
     }
-    #hero_text p{
+
+    #hero_text p {
         font-size: 20px;
     }
 
-    .about_col_2{
+    .about_col_2 {
         padding: 18px 8px 18px 8px;
     }
 
-    .project_section{
+    .project_section {
         padding: 20px 21px 20px 21px;
     }
-    #contacts_page{
-        padding: 20px 22px 20px 22px;
-    }
-    .services{
+
+    #contacts_page {
         padding: 20px 22px 20px 22px;
     }
 
-    .copyright_sec{
+    .services {
+        padding: 20px 22px 20px 22px;
+    }
+
+    .copyright_sec {
         font-size: 12px;
     }
 
-    .contact_left p{
+    .contact_left p {
         font-size: 18px;
+    }
+
+    .service_box div {
+
+        width: 80%;
+        margin: auto;
+    }
+
+    form button {
+        width: 40%;
     }
 }
 
 
-@media only screen and (max-width: 350px)
-{
-    #logo_text h1{
+@media only screen and (max-width: 350px) {
+    #logo_text h1 {
         font-size: 20px;
     }
 
+    .service_box div h1 {
+        font-size: 18px;
+    }
+
+    .service_box div {
+        font-size: 12px;
+    }
+
+    .service_box div {
+
+        width: 90%;
+        margin: auto;
+    }
+
+    .copyright_sec {
+        font-size: 10px;
+    }
+
+    .contact_left p {
+        font-size: 15px;
+    }
+
+    .projects>div {
+        /* background-color: rgb(46, 46, 46); */
+        /* border-radius: 15px; */
+        padding: 10px 6px;
+        /* transition: 0.5s; */
+        width: 90%;
+        margin: auto;
+    }
+
+    .projects_link a {
+        font-size: 15px;
+    }
+
+    .project_section {
+        padding: 15px 5px 15px 5px;
+    }
 }

@@ -88,14 +88,22 @@ document.addEventListener("click", function (event) {
 
 });
 
+var myskill = document.getElementsByClassName("more_skills");
+var mybtn = document.getElementsById("btn1");
+
 //add scroll menu if window is maximized after opened in small screen
 window.addEventListener("resize", function (event) {
-    if (window.innerWidth > 1058)
+    if(window.innerWidth > 1410)
+    bars.style.right = "250px";
+    else if (window.innerWidth > 1058)
         bars.style.right = "0";
     else if (window.innerWidth <= 1058)
         bars.style.right = "-850px";
 
 });
+
+
+
 
 
 function displayMoreProjects(condition) {
