@@ -54,20 +54,11 @@ nav ul li a:hover {
 }
 
 #hero_page {
-    /* width: 100vw;
+    width: 100vw;
     height: 100vh;
     background-color: black;
-    background-image: url("../images/profile_newnew1.png");
-    background-size: cover; */
-    width: 100vw;
-    /* height: 100vh; */
-    height: auto;
-    background-color: black;
-    background-image: url("../images/profile_mobile.png");
-    background-size: 80vh;
-    background-position: right;
-    background-repeat: no-repeat;
-}
+}  
+
 
 nav div h1 {
     display: inline-block;
@@ -107,29 +98,53 @@ nav div:first-child {
 
 /* <------------hero section------------> */
 
-#hero_text {
+
+
+#hero_text{
     color: white;
     flex-direction: column;
     display: flex;
-    padding-top: 10%;
-    height: 80vh;
-    position: relative;
-    margin-left: 10%;
-    justify-content: center;
-    margin: 0px 7vw;
-    padding: 0;
+    
+    flex-basis: 60%;
+    
 }
 
-#hero_text p {
+.hero_col_2{
+    flex-basis: 40%;
+
+    
+}
+
+#hero_img2{
+    width: 70%;
+    border-radius: 15px;
+    
+    margin: 0px 0px 0px 30%;
+}
+
+#hero_img{
+    display: none;
+}
+
+.row_hero{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    height: 85vh;
+}
+
+/* #hero_text p { */
     /* font-weight: 100; */
-    margin-bottom: 20px;
+    /* margin-bottom: 20px;
     font-size: 30px;
 }
 
 #hero_text h1 {
     font-weight: 550;
     font-size: 60px;
-}
+} */
 
 .name {
     color: orangered;
@@ -608,6 +623,9 @@ form button {
         width: auto;
         height: fit-content;
     }
+    .row_hero{
+        width: 80%;
+    }
 
     .nav_scroll {
         width: 70%;
@@ -649,22 +667,15 @@ form button {
     .third_div {
         box-shadow: 0 0 1.25rem 0.625rem hsl(0deg 0% 15.38%);
     }
-/* 
+
     #hero_page {
         width: auto;
         height: fit-content;
-    } */
+    }
 
     .nav_scroll {
         width: 99%;
 
-    }
-
-    #hero_page {
-        width: 100vw;
-        height: 100vh;
-        
-        background-position: bottom right;
     }
 
     #navbar i {
@@ -752,7 +763,7 @@ form button {
         text-align: center;
     }
 
-    
+/*     
 #hero_text {
     padding-top: 11%;
     margin-left: 10%;
@@ -769,7 +780,7 @@ form button {
         font-size: 50px;
         word-wrap: break-word;
         width: 42vw;
-    }
+    } */
     
 }
 
@@ -863,11 +874,11 @@ form button {
     }
 
    
-#hero_page {
+/* #hero_page {
     width: 100vw;
     height: 100vh;
     
-}
+} */
 }
 
 
@@ -883,18 +894,14 @@ form button {
 
 @media only screen and (max-width: 680px) {
 
-    #hero_page{
-        background-image: url("../images/profile_mobile1.png");
-        background-size: 70vh;
-    }
-    #hero_text h1 {
+    /* #hero_text h1 {
         font-size: 40px;
         word-wrap: break-word;
         
     }
     #hero_text p{
         font-size: 27px;
-    }
+    } */
     
     .tab_arrange{
         display: flex;
@@ -914,7 +921,7 @@ form button {
 }
 @media only screen and (max-width: 590px) {
 
-    #hero_page{
+    /* #hero_page{
         background-size: 65vh;
     }
     #hero_text h1 {
@@ -922,43 +929,49 @@ form button {
     }
     #hero_text {
         padding-top: 18%;
-    }
+    } */
   
 
 }
 
 #hero_img{
-    display: none;
+    /* display: none; */
 }
 
 
 
 @media only screen and (max-width: 930px)
 {
-    #hero_page{
+    /* #hero_page{
         background-image: none;
         background-color: black;
         width: 100vw;
         height: fit-content;
-    }
+    } */
 
     #about_img{
         display: none;
     }
 
+    
     #hero_img{
         display: block;
     }
 
+    #hero_img2{
+        display: none;
+    }
+
+/*
     #hero_img{
     width: 70vw;
     margin: auto;
     border-radius: 10px;
     margin-top: 30px;
     box-shadow: 0px 0px 0.625rem 0.25rem #3d3d3d;
-    }
+    } */
 
-    #hero_text{
+    /* #hero_text{
         position: relative;
         width: 100%;
         display: flex;
@@ -968,19 +981,19 @@ form button {
         align-items: center;
           padding: 40px 40px 0px 40px;
         margin: 0;
-    }
+    } */
 }
 
 
 
 @media only screen and (max-width: 450px){
-    #hero_text h1{
+    /* #hero_text h1{
         font-size: 30px;
         width: 170px;
     }
     #hero_text p{
         font-size: 20px;
-    }
+    } */
 
     .about_col_2{
         padding: 18px 8px 18px 8px;
@@ -1013,3 +1026,8 @@ form button {
     }
 
 }
+
+
+
+
+
