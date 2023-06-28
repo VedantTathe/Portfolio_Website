@@ -104,6 +104,7 @@ nav div:first-child {
     display: contents;
 }
 
+
 /* <------------hero section------------> */
 
 #hero_text {
@@ -141,6 +142,19 @@ nav div:first-child {
     color: rgb(152, 0, 0);
     transform: scale(1.1);
 }
+
+.hero_symbols i{
+        margin: 5px;
+    font-size: 28px;
+
+    color: rgb(183, 183, 183);
+}
+
+.hero_symbols{
+    
+    margin: 10px 0px 10px 0px;
+}
+
 
 /* About Page */
 
@@ -225,11 +239,37 @@ nav div:first-child {
 }
 
 .tab_content span {
-    font-size: 20px;
+    font-size: 15px;
     color: orange;
     line-height: 40px;
     font-weight: 800;
 }
+
+progress {
+    border: 1px solid orange;
+    
+ }
+ progress::-webkit-progress-bar {
+    background-color: gray;
+ }
+ progress::-webkit-progress-value {
+    background-color: rgb(212, 78, 0);
+ }
+
+ .tab_arrange{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 20px;
+ }  
+
+ #btn1-alt{
+    display: none;
+ }
+
+ #btn1{
+    display: none;
+ }
 
 /* <--------------------services------------------> */
 
@@ -391,6 +431,15 @@ nav div:first-child {
 
 .projects_link {
     box-shadow: 1px 2px 0.75rem 0.625rem hsl(0deg 0% 15.38%);
+}
+
+
+#btn2-alt{
+    display: none;
+}
+
+.projects_box_hide{
+    display: none;
 }
 
 
@@ -847,8 +896,21 @@ form button {
         font-size: 27px;
     }
     
-
+    .tab_arrange{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    } 
     
+    #btn1{
+        display: block;
+    }
+
+    .more_skills{
+        display: none;
+    }
 }
 @media only screen and (max-width: 590px) {
 
@@ -861,7 +923,7 @@ form button {
     #hero_text {
         padding-top: 18%;
     }
-    
+  
 
 }
 
@@ -904,7 +966,7 @@ form button {
         height: fit-content;
         text-align: center;
         align-items: center;
-        padding: 40px;
+          padding: 40px 40px 0px 40px;
         margin: 0;
     }
 }
@@ -914,13 +976,14 @@ form button {
 @media only screen and (max-width: 450px){
     #hero_text h1{
         font-size: 30px;
+        width: 170px;
     }
     #hero_text p{
         font-size: 20px;
     }
 
     .about_col_2{
-        padding: 18px 5px 18px 5px;
+        padding: 18px 8px 18px 8px;
     }
 
     .project_section{
@@ -932,4 +995,21 @@ form button {
     .services{
         padding: 20px 22px 20px 22px;
     }
+
+    .copyright_sec{
+        font-size: 12px;
+    }
+
+    .contact_left p{
+        font-size: 18px;
+    }
+}
+
+
+@media only screen and (max-width: 350px)
+{
+    #logo_text h1{
+        font-size: 20px;
+    }
+
 }

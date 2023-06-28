@@ -46,7 +46,21 @@
                     <div id="hero_text">
                         <p>Web Developer</p>
                         <h1>Hi, I`m <div class="name" onclick="">Vedant </div> <br>Tathe From India</h1>
+                        <div class="hero_symbols">
+                            <a href="https://github.com/VedantTathe/"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://youtube.com/@vedant_tathe"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://twitter.com/vedant_tathe_07"><i
+                                    class="fa-brands fa-square-twitter"></i></a>
+                            <a href="https://www.instagram.com/vedant_tathe_07/"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/vedant-tathe-04b5a2262/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                        </div>
                     </div>
+                    <!-- <div class="outer_div_hero_symbols">
+                        
+                    
+                    </div> -->
 
                 </div>
 
@@ -67,27 +81,66 @@
 
 
                                 <div class="about_menu">
-                                    <h3 class="tab_links " id="skills" onclick="tabClick('skills')">Skills</h3>
-                                    <h3 class="tab_links active_link" id="education" onclick="tabClick('education')">
+                                    <h3 class="tab_links active_link" id="skills" onclick="tabClick('skills')">Skills
+                                    </h3>
+                                    <h3 class="tab_links" id="education" onclick="tabClick('education')">
                                         Education
                                     </h3>
                                 </div>
 
-                                <div class="tab_content" id="skills_tab">
 
-                                    <ul>
-                                        <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing
-                                            elit.
-                                            Voluptate, cum. <br></li>
-                                        <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing
-                                            elit.
-                                            Voluptate, cum. <br></li>
-                                        <li><span>web</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing
-                                            elit.
-                                            Voluptate, cum. <br></li>
-                                    </ul>
+
+                                <div class="tab_content active_tab" id="skills_tab">
+
+
+                                    <div class="tab_arrange">
+
+                                        <div>
+                                            <ul>
+                                                <li><span>C, C++</span><br>
+                                                    <progress value="90" max="100"></progress>
+                                                    <br>
+                                                </li>
+                                                <li><span>JAVA</span><br><progress value="85" max="100"></progress>
+                                                    <br>
+                                                </li>
+                                                <li><span>HTML, CSS</span><br><progress value="90" max="100"></progress>
+                                                    <br>
+                                                </li>
+                                                <li><span>JAVASCIPT</span><br>
+                                                    <progress value="75" max="100"></progress>
+                                                    <br>
+                                                </li>
+                                            </ul>
+                                        
+                                        </div>
+
+                                        <div class="more_skills">
+                                            <ul>
+                                                <li><span>*REACT</span><br><progress value="0" max="100"></progress>
+                                                    <br>
+                                                </li>
+                                                <li><span>NODEJS, EXPRESSJS</span><br>
+                                                    <progress value="75" max="100"></progress>
+                                                    <br>
+                                                </li>
+                                                <li><span>MONGODB</span><br><progress value="75" max="100"></progress>
+                                                    <br>
+                                                </li>
+                                                <li><span>ANDROID DEVELOPMENT</span><br><progress value="75"
+                                                        max="100"></progress>
+                                                    <br>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="subtitle">
+                                            <button class="subdown" id="btn1" onclick="displayMoreSkills(true)">See More</button>
+                                            <button class="subdown" id="btn1-alt" onclick="displayMoreSkills(false)">See Less</button>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="tab_content  active_tab" id="education_tab">
+                                <div class="tab_content  " id="education_tab">
 
                                     <ul>
                                         <li><span>Diploma in Computer Engineering</span><br>College: Government
@@ -146,7 +199,7 @@
                                 <img src="./images/project1.jpg" alt="">
                                 <!-- ********************************************** -->
                                 <div class="projects_link">
-                                    <h3><a href="http://127.0.0.1:5500/">Portfolio Website</a></h3>
+                                    <h3><a href="https://vedanttathe.netlify.app">Portfolio Website</a></h3>
                                 </div>
 
                                 <!-- ****************************************************************** -->
@@ -155,7 +208,7 @@
                                 <img src="./images/project2.jpg" alt="">
                                 <!-- ********************************************** -->
                                 <div class="projects_link">
-                                    <h3><a href="http://127.0.0.1:5500/">Hostinger Clone</a></h3>
+                                    <h3><a href="https://thapatechcodefest2.netlify.app">Hostinger Clone</a></h3>
                                 </div>
 
                                 <!-- ****************************************************************** -->
@@ -164,14 +217,61 @@
                                 <img src="./images/project1.jpg" alt="">
                                 <!-- ********************************************** -->
                                 <div class="projects_link">
-                                    <h3><a href="http://127.0.0.1:5500/">Portfolio Website</a></h3>
+                                    <h3><a href="https://vedanttathe.netlify.app">Portfolio Website</a></h3>
+                                </div>
+
+                                <!-- ****************************************************************** -->
+                            </div>
+                            <div class="projects_box projects_box_hide">
+                                <img src="./images/project1.jpg" alt="">
+                                <!-- ********************************************** -->
+                                <div class="projects_link">
+                                    <h3><a href="https://vedanttathe.netlify.app">Portfolio Website</a></h3>
+                                </div>
+
+                                <!-- ****************************************************************** -->
+                            </div>
+                            <div class="projects_box projects_box_hide">
+                                <img src="./images/project1.jpg" alt="">
+                                <!-- ********************************************** -->
+                                <div class="projects_link">
+                                    <h3><a href="https://vedanttathe.netlify.app">Portfolio Website</a></h3>
+                                </div>
+
+                                <!-- ****************************************************************** -->
+                            </div>
+                            <div class="projects_box projects_box_hide">
+                                <img src="./images/project1.jpg" alt="">
+                                <!-- ********************************************** -->
+                                <div class="projects_link">
+                                    <h3><a href="https://vedanttathe.netlify.app">Portfolio Website</a></h3>
+                                </div>
+
+                                <!-- ****************************************************************** -->
+                            </div>
+                            <div class="projects_box projects_box_hide">
+                                <img src="./images/project1.jpg" alt="">
+                                <!-- ********************************************** -->
+                                <div class="projects_link">
+                                    <h3><a href="https://vedanttathe.netlify.app">Portfolio Website</a></h3>
+                                </div>
+
+                                <!-- ****************************************************************** -->
+                            </div>
+                            <div class="projects_box projects_box_hide">
+                                <img src="./images/project1.jpg" alt="">
+                                <!-- ********************************************** -->
+                                <div class="projects_link">
+                                    <h3><a href="https://vedanttathe.netlify.app">Portfolio Website</a></h3>
                                 </div>
 
                                 <!-- ****************************************************************** -->
                             </div>
                         </div>
                         <div class="subtitle">
-                            <button class="subdown" id="btn" onclick="btn_Move()">See More</button>
+                            <button class="subdown" id="btn2" onclick="displayMoreProjects(true)">See More</button>
+                            <button class="subdown" id="btn2-alt" onclick="displayMoreProjects(false)">See Less</button>
+                                            
                         </div>
                     </div>
                 </div>
@@ -189,6 +289,8 @@
                                 <p><i class="fa-solid fa-phone"></i>9112877202</p>
 
                                 <div class="symbols">
+
+                                    <a href="https://github.com/VedantTathe/"><i class="fa-brands fa-github"></i></a>
                                     <a href="https://youtube.com/@vedant_tathe"><i class="fa-brands fa-youtube"></i></a>
                                     <a href="https://twitter.com/vedant_tathe_07"><i
                                             class="fa-brands fa-square-twitter"></i></a>
@@ -211,6 +313,7 @@
                                         placeholder="Your Message"></textarea>
 
                                     <div> <button class="form" type="submit" name="Button" id="button">Submit</button>
+                                        
                                     </div>
                                 </form>
                             </div>
@@ -229,210 +332,8 @@
 
     </div>
 
+    <script src="./js/script.js"></script>
 
-
-    <script>
-
-        var tablink = document.getElementsByClassName("tab_links");
-        var tabcont = document.getElementsByClassName("tab_content");
-        function tabClick(name) {
-            for (tl of tablink) {
-                tl.classList.remove("active_link");
-            }
-            for (tc of tabcont) {
-                tc.classList.remove("active_tab");
-            }
-
-            var activelink = document.getElementById(name);
-            activelink.classList.add("active_link");
-
-            var activetab = document.getElementById(name + "_tab");
-            activetab.classList.add("active_tab");
-
-        }
-
-
-        //navbar enable after scroll
-
-
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-                var nav = document.getElementById("navbar");
-                var menubar = document.getElementById("menubar");
-                var menu = document.getElementById("menu");
-
-                nav.classList.add("nav_scroll");
-                menubar.classList.add("menu_scroll");
-                menu.classList.add("disp_conetents");
-
-            } else {
-                document.getElementById("navbar").classList.remove("nav_scroll");
-                document.getElementById("menubar").classList.remove("menu_scroll");
-                document.getElementById("menu").classList.remove("disp_conetents");
-            }
-        }
-
-        // scroll effect on link click
-
-        let anchorList =
-            document.querySelectorAll('a[href^="#"]');
-
-        for (link of anchorList) {
-
-            link.onclick = function (e) {
-                e.preventDefault();
-                let destination =
-                    document.querySelector(this.hash);
-                destination.scrollIntoView({
-                    behavior: 'smooth'
-                });
-                if (window.innerWidth <= 1058)
-                    bars.style.right = "-850px";
-               
-
-
-            }
-        }
-
-
-
-        //menubar for phones
-        var bars = document.getElementById("menubar");
-        var menu_open = false;
-        function menuOpen() {
-            bars.style.right = "0"
-            menu_open = true;
-        }
-        function menuClose() {
-            bars.style.right = "-850px";
-            menu_open = false;
-        }
-
-        //close menu if user clicks outside the menu
-
-        document.addEventListener("click", function (event) {
-
-            if (event.target.closest("#menu"))
-                return
-            else
-                if (menu_open == true)
-                    bars.style.right = "-850px"
-
-        });
-
-        //add scroll menu if window is maximized after opened in small screen
-        window.addEventListener("resize", function (event) {
-            if(window.innerWidth > 1058)
-            bars.style.right = "0";
-            else if(window.innerWidth <= 1058)
-            bars.style.right = "-850px";
-            
-        });
-
-
-    </script>
 </body>
 
 </html>
-
-
-
-<!-- 
-
-@media only screen and (max-width: 800px) and (min-width: 680px) {
-
-    #hero_text h1{
-        font-size: 45px;
-    }
-        
-    }
-    
-
-@media only screen and (max-width: 680px) {
-
-    #hero_page{
-        background-image: url("../images/profile_mobile1.png");
-        background-size: 70vh;
-    }
-    #hero_text h1 {
-        font-size: 40px;
-        word-wrap: break-word;
-        /* width: 35vw; */
-    }
-    #hero_text p{
-        font-size: 27px;
-    }
-    
-
-    
-}
-@media only screen and (max-width: 590px) {
-
-    #hero_page{
-        background-size: 65vh;
-    }
-    #hero_text h1 {
-        font-size: 35px;
-    }
-    #hero_text {
-        padding-top: 18%;
-    }
-    
-
-}
-
-
-@media only screen and (max-width: 510px) {
-
-    #hero_page{
-        background-size: 65vh;
-        background-position: 102%;
-    }
-    #hero_text h1 {
-        font-size: 30px;
-    } #hero_text p {
-        font-size: 23px;
-    }
-    #hero_text {
-        padding-top: 25%;
-        /* width: 56vw; */
-    }
-    
-
-}
-
-
-@media only screen and (max-width: 445px) {
-#hero_page{
-    
-    background-image: url("../images/2.png");
-    background-size: 55vh;
-    background-position: bottom right;
-
-}
-
-#hero_text {
-    padding-top: 25%;
-}
-.about_menu{
-    font-size: 18px;
-    margin: 0px 0px 14px -50%;
-} 
-
-#navbar{
-    margin-right: 40px;
-}
-}
-
-@media only screen and (max-width: 385px) {
-#hero_page h1{
-    font-size: 25px;
-}
-
-#hero_page p{
-    word-wrap: wrap;
-    width: 118px;
-}
-} -->
