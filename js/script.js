@@ -122,19 +122,87 @@ function displayMoreProjects(condition) {
 function displayMoreSkills(condition) {
     var skills = document.querySelector(".more_skills");
 
-        if (condition) {
-            skills.style.display = "block";
-            document.getElementById("btn1").style.display = "none";
-            document.getElementById("btn1-alt").style.display = "block";
+    if (condition) {
+        skills.style.display = "block";
+        document.getElementById("btn1").style.display = "none";
+        document.getElementById("btn1-alt").style.display = "block";
 
 
-        }
-        else {
+    }
+    else {
 
-            skills.style.display = "none";
-            document.getElementById("btn1").style.display = "block";
-            document.getElementById("btn1-alt").style.display = "none";
+        skills.style.display = "none";
+        document.getElementById("btn1").style.display = "block";
+        document.getElementById("btn1-alt").style.display = "none";
 
-        }
-    
+    }
+
 }
+var rep;
+document.getElementById("myname").onmouseover = function () { a(); };
+document.getElementById("myname").onmouseout = function () { b(); };
+document.getElementById("nav_links").onmouseover = function () { a(); };
+document.getElementById("nav_links").onmouseout = function () { b(); };
+document.getElementById("logo_text").onmouseover = function () { a(); };
+document.getElementById("logo_text").onmouseout = function () { b(); };
+
+function a() {
+    // console.log(deg)
+    document.getElementById("hero_page").style.background = "linear-gradient(" + deg + "deg, rgb(3 0 63) 0%, rgba(255,80,0,1) 183%, rgba(0,0,0,1) 0%)";
+
+
+    if (deg >= 0 && deg <= 360) {
+        deg++;
+        if (deg == 360)
+            deg = -1;
+    }
+    else {
+
+
+        deg--;
+
+        if (deg == -360)
+            deg = 1;
+    }
+
+
+
+
+   rep = setTimeout(a, 5);
+
+}
+
+function b(){
+    clearTimeout(rep);
+}
+
+//   setTimeout(animateBg, 1000);
+
+// // jQuery
+
+
+var deg = 199;
+// $(".name").hover(
+//     function () {
+//         if (deg >= 0 && deg <= 360) {
+//             deg++;
+//             if (deg == 360)
+//                 deg = -1;
+//         }
+//         else {
+
+
+//             deg--;
+
+//             if (deg == -360)
+//                 deg = 1;
+//         }
+
+
+//     },
+//     function () {
+//         // alert(deg);
+//     }
+
+// );
+

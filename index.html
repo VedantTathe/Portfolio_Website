@@ -7,6 +7,8 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/c8a0e865fe.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+
 </head>
 
 <body>
@@ -29,13 +31,15 @@
                         <div id="menu">
                             <ul id="menubar">
                                 <i class="fa-solid fa-xmark" onclick="menuClose()"></i>
+<div id="nav_links">
+    
+    <li class="nav_links"><a href="#hero_page">Home</a></li>
+    <li class="nav_links"><a href="#about_page">About</a></li>
+    <li class="nav_links"><a href="#services_page">Services</a></li>
+    <li class="nav_links"><a href="#projects_page">Projects</a></li>
+    <li class="nav_links"><a href="#contacts_page">Contact</a></li>
 
-                                <li><a href="#hero_page">Home</a></li>
-                                <li><a href="#about_page">About</a></li>
-                                <li><a href="#services_page">Services</a></li>
-                                <li><a href="#projects_page">Projects</a></li>
-                                <li><a href="#contacts_page">Contact</a></li>
-                            </ul>
+</div>                            </ul>
                             <i class="fa-solid fa-bars" onclick="menuOpen()"></i>
                         </div>
                     </nav>
@@ -43,10 +47,12 @@
                     <div class="hero_img_div">
                         <img id="hero_img" src="./images/WhatsApp Image 2023-06-24 at 12.59.32.jpg" alt="">
                     </div>
+                    <div class="hero_text_div">
+                        
                     <div class="row_hero">
                         <div id="hero_text" class="hero_col_1">
                             <p>Web Developer</p>
-                            <h1>Hi, I`m <div class="name" onclick="">Vedant </div> <br>Tathe From India</h1>
+                            <h1>Hi, I`m <div class="name" id="myname" >Vedant </div> <br>Tathe From India</h1>
                             <div class="hero_symbols">
                                 <a href="https://github.com/VedantTathe/"><i class="fa-brands fa-github"></i></a>
                                 <a href="https://youtube.com/@vedant_tathe"><i class="fa-brands fa-youtube"></i></a>
@@ -71,6 +77,7 @@
                             </div>
                         </div>
 
+                    </div>
                     </div>
                 </div>
 
