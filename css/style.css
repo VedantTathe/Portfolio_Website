@@ -54,8 +54,7 @@ nav ul li a:hover {
 }
 
 #hero_page {
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw; */
     background-color: black;
 }  
 
@@ -116,10 +115,18 @@ nav div:first-child {
 }
 
 #hero_img2{
-    width: 70%;
+    width: 130%;
+    border-radius: 15px 15px 0px 10%;
+}
+
+.hero_col_2 div{
+    width: 65%;
     border-radius: 15px;
-    
+    background-color: #121212;
+    padding: 10px;
     margin: 0px 0px 0px 30%;
+    box-shadow: #302f2f 0px 0px 1.25rem 0.625rem;
+    overflow: hidden;
 }
 
 #hero_img{
@@ -132,7 +139,8 @@ nav div:first-child {
     width: 80%;
     margin: auto;
     align-items: center;
-    height: 85vh;
+    
+    padding: 2% 0% 4% 0%;
 }
 
 /* #hero_text p { */
@@ -642,10 +650,6 @@ form button {
 
 /* <---making website responsive for smaller screens---> */
 
-#hero_text h1{
-    width: auto;
-}
-
 #navbar i:hover {
     box-shadow: 0 0 1.25rem 0.625rem hsl(0deg 0% 15.38%);
     /* display: inline; */
@@ -666,11 +670,6 @@ form button {
 
     .third_div {
         box-shadow: 0 0 1.25rem 0.625rem hsl(0deg 0% 15.38%);
-    }
-
-    #hero_page {
-        width: auto;
-        height: fit-content;
     }
 
     .nav_scroll {
@@ -762,6 +761,16 @@ form button {
         /* border: 1px solid rgb(180, 81, 5); */
         text-align: center;
     }
+    
+
+    .more_skills{
+        display: block;
+    }
+
+    
+    #btn1{
+        display: none;
+    }
 
 /*     
 #hero_text {
@@ -825,9 +834,8 @@ form button {
         margin: auto;
         padding: 0px 0px 30px 0px;
     }
-
     #about_page img {
-        width: 60%;
+        width: 42%;
         margin: 0 20% 5% 20%;
     }
 
@@ -872,13 +880,10 @@ form button {
     .about_col_2 h1{
         color: orange;
     }
-
-   
-/* #hero_page {
-    width: 100vw;
-    height: 100vh;
+#hero_text{
     
-} */
+    
+}
 }
 
 
@@ -921,22 +926,21 @@ form button {
 }
 @media only screen and (max-width: 590px) {
 
-    /* #hero_page{
-        background-size: 65vh;
+    .hero_col_2{
+        display: none;
     }
-    #hero_text h1 {
-        font-size: 35px;
+
+    #about_page img{
+        width: 55%;
     }
-    #hero_text {
-        padding-top: 18%;
-    } */
-  
+
+  #hero_img{
+    display: block;
+  }
 
 }
 
-#hero_img{
-    /* display: none; */
-}
+
 
 
 
@@ -949,7 +953,7 @@ form button {
         height: fit-content;
     } */
 
-    #about_img{
+    /* #about_img{
         display: none;
     }
 
@@ -960,7 +964,7 @@ form button {
 
     #hero_img2{
         display: none;
-    }
+    } */
 
 /*
     #hero_img{
@@ -983,6 +987,8 @@ form button {
         margin: 0;
     } */
 }
+
+
 
 
 
