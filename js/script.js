@@ -103,7 +103,7 @@ function displayMoreProjects(condition) {
 
     for (const pr of projects) {
         if (condition) {
-            pr.style.display = "block";
+            pr.style.display = "flex";
             document.getElementById("btn2").style.display = "none";
             document.getElementById("btn2-alt").style.display = "block";
 
