@@ -380,7 +380,7 @@ progress::-webkit-progress-value {
 .service_box {
     display: grid;
     
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     grid-gap: 4.0rem;
 
     font-size: 1.6rem;
@@ -442,7 +442,8 @@ progress::-webkit-progress-value {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     grid-gap: 4.0rem;
     overflow: hidden;
 }
@@ -907,7 +908,7 @@ form button {
         padding: 8% 0px 0px 0px;
         margin: auto;
 
-        text-wrap: nowrap;
+        white-space: nowrap;
 
         font-size: 3.5vw;
     }

@@ -197,3 +197,4 @@ if(window.innerHeight > 1500)
  document.getElementById("copyrightsec_name").style.fontSize  = "2vw";
  document.getElementById("education").style.marginLeft = "5rem";
 }
+
