@@ -1,4 +1,6 @@
 
+//about menu section
+
 var tablink = document.getElementsByClassName("tab_links");
 var tabcont = document.getElementsByClassName("tab_content");
 function tabClick(name) {
@@ -54,7 +56,7 @@ for (link of anchorList) {
         destination.scrollIntoView({
             behavior: 'smooth'
         });
-        if (window.innerWidth <= 1058)
+        if (window.innerWidth <= 450)
             bars.style.right = "-850px";
 
 
@@ -90,14 +92,18 @@ document.addEventListener("click", function (event) {
 
 //add scroll menu if window is maximized after opened in small screen
 window.addEventListener("resize", function (event) {
-    if (window.innerWidth > 1058)
+    if (window.innerWidth > 450 && window.innerWidth <1410)
         bars.style.right = "0";
-    else if (window.innerWidth <= 1058)
+    else if (window.innerWidth <= 450)
         bars.style.right = "-850px";
+    else if(window.innerWidth > 1410)
+    {
+        bars.style.right = "272px";
+    }
 
 });
 
-
+//display hide more projects and services
 function displayMoreProjects(condition) {
     var projects = document.querySelectorAll(".projects_box_hide");
 
@@ -138,7 +144,12 @@ function displayMoreSkills(condition) {
     }
 
 }
+
+
+//background animations on hover name, links and logo
+
 var rep;
+var deg = 199;
 document.getElementById("myname").onmouseover = function () { a(); };
 document.getElementById("myname").onmouseout = function () { b(); };
 document.getElementById("nav_links").onmouseover = function () { a(); };
@@ -165,9 +176,6 @@ function a() {
             deg = 1;
     }
 
-
-
-
    rep = setTimeout(a, 5);
 
 }
@@ -176,33 +184,16 @@ function b(){
     clearTimeout(rep);
 }
 
-//   setTimeout(animateBg, 1000);
-
-// // jQuery
 
 
-var deg = 199;
-// $(".name").hover(
-//     function () {
-//         if (deg >= 0 && deg <= 360) {
-//             deg++;
-//             if (deg == 360)
-//                 deg = -1;
-//         }
-//         else {
 
-
-//             deg--;
-
-//             if (deg == -360)
-//                 deg = 1;
-//         }
-
-
-//     },
-//     function () {
-//         // alert(deg);
-//     }
-
-// );
-
+//responsive for dekstop mode
+if(window.innerHeight > 1500)
+{
+ document.getElementById("idservice_box").style.gridTemplateColumns = "none";
+ document.getElementById("idprojects").style.gridTemplateColumns = "none";
+ document.getElementById("about").style.fontSize = "1rem";
+ document.getElementById("copyright").style.fontSize  = ".5vw";
+ document.getElementById("copyrightsec_name").style.fontSize  = "2vw";
+ document.getElementById("education").style.marginLeft = "5rem";
+}

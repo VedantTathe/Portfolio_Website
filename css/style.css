@@ -14,6 +14,8 @@ html {
     font-size: 62.5%;
 }
 
+
+
 /* <------------navbar------------> */
 
 nav {
@@ -50,6 +52,7 @@ nav ul li a {
     color: white;
     margin: 0rem 1.5rem;
     transition: 0.5s;
+    position: relative;
 }
 
 nav ul li a:hover {
@@ -57,6 +60,24 @@ nav ul li a:hover {
     padding: .7rem;
     border-radius: 1.0rem;
     color: orange;
+}
+nav ul li a:hover::after{
+width: 90%;
+}
+
+
+nav ul li a::after{
+    
+    content: '';
+    position: absolute;
+    display: flex;
+    width: 0;
+    left: 5%;
+    /* margin: 0px 26%; */
+    background-color: orangered;
+    transition: 0.5s;
+    height: 3px;
+
 }
 
 #hero_page {
@@ -156,7 +177,7 @@ nav div:first-child {
 }
 
 .hero_col_2 div:hover {
-    transform: scale(1.1);
+    transform: skew(-3deg, 14deg);
 }
 
 #hero_img {
@@ -188,6 +209,8 @@ nav div:first-child {
     color: orangered;
     transition: transform 0.5s;
     cursor: pointer;
+
+    font-size: 4.5rem;
     display: inline-block;
 }
 
@@ -215,6 +238,8 @@ nav div:first-child {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
+    align-items: center;
 }
 
 #about_page {
@@ -246,7 +271,7 @@ nav div:first-child {
     flex-basis: 55%;
 }
 
-.about_col_2 h1{
+.about_col_2 h1 {
     font-size: 4rem;
 }
 
@@ -354,9 +379,10 @@ progress::-webkit-progress-value {
 
 .service_box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 4.0rem;
     
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 4.0rem;
+
     font-size: 1.6rem;
 }
 
@@ -375,12 +401,16 @@ progress::-webkit-progress-value {
 }
 
 .service_box div h1 {
-    margin: 2.0rem 1.4rem;
+    margin: 2rem 1.4rem;
+    /* white-space: nowrap; */
     font-size: 2.5rem;
+    overflow: hidden;
 }
 
 .service_box div p {
     line-height: 2.3rem;
+    font-size: 1.5rem;
+    overflow: hidden
 }
 
 .service_box div i {
@@ -395,7 +425,8 @@ progress::-webkit-progress-value {
     box-shadow: 0 0 1.25rem 0.625rem hsl(0deg 0% 15.38%);
 }
 
-.container>h1, .subtitle>h1{
+.container>h1,
+.subtitle>h1 {
     color: orange;
     font-size: 4rem;
 }
@@ -411,7 +442,7 @@ progress::-webkit-progress-value {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 4.0rem;
     overflow: hidden;
 }
@@ -530,7 +561,7 @@ progress::-webkit-progress-value {
     margin: 0rem .5rem 3.0rem 0rem;
     padding: 1rem;
     font-size: 5.0rem;
-    
+
     white-space: nowrap;
 }
 
@@ -544,7 +575,7 @@ progress::-webkit-progress-value {
     margin-left: 1rem
 }
 
-.contact_left p{
+.contact_left p {
     display: flex;
 }
 
@@ -635,7 +666,8 @@ form button {
 .copyright_sec p {
     margin: auto;
     width: fit-content;
-    font-size: 1.5rem;
+
+    font-size: 1.5vw;
     padding: 1.5rem 0rem 1.5rem 0rem;
 }
 
@@ -647,6 +679,12 @@ form button {
 
 .copyright_sec i {
     color: orangered;
+}
+
+#copyrightsec_name {
+
+    margin-left: .5rem;
+    font-size: 1.5vw;
 }
 
 /* <---------bars and close bar icon--------> */
@@ -828,6 +866,73 @@ form button {
         margin-right: 5vh;
     }
 
+    
+
+    #logo_text h1 {
+        font-size: 2.0rem;
+    }
+
+    nav img {
+        width: 4rem;
+    }
+
+    nav {
+        margin: .2rem 3.5rem;
+    }
+    
+
+    #hero_page {
+        background-image: none;
+        background-color: black;
+        width: 100vw;
+        height: fit-content;
+        background: linear-gradient(-310deg, rgb(3 0 63) 0%, rgba(255, 80, 0, 1) 183%, rgba(0, 0, 0, 1) 0%);
+    }
+
+
+    #hero_img {
+        display: block;
+    }
+
+    #hero_img {
+        width: 70vw;
+        margin: auto;
+        border-radius: 10px;
+        margin-top: 3.0rem;
+        box-shadow: 0px 0px 0.625rem 0.25rem #3d3d3d;
+    }
+
+    #hero_text {
+        text-align: center;
+        padding: 8% 0px 0px 0px;
+        margin: auto;
+
+        text-wrap: nowrap;
+
+        font-size: 3.5vw;
+    }
+
+    #hero_text p {
+        font-size: 3.5vw;
+    }
+
+
+    .hero_symbols i {
+        font-size: 4.5vw;
+        padding: 0;
+        margin: .2rem;
+    }
+
+    .hero_text_div {
+        height: 35vh;
+        display: flex;
+    }
+    
+    .myname {
+
+        font-size: 4vw;
+    }
+
     .row {
         display: block;
     }
@@ -851,16 +956,6 @@ form button {
         width: 100%;
     }
 
-    .contact_left::after {
-        content: '';
-        width: 100%;
-        height: .3rem;
-        background-color: #313131;
-        position: absolute;
-        left: 0;
-        margin: 5.0rem 0px;
-        transition: 0.5s;
-    }
 
     .about_col_2 h1 {
         color: orange;
@@ -883,119 +978,93 @@ form button {
         display: none;
     }
 
+    .about_menu {
 
-    #hero_page {
-        background-image: none;
-        background-color: black;
-        width: 100vw;
-        height: fit-content;
-        background: linear-gradient(-310deg, rgb(3 0 63) 0%, rgba(255, 80, 0, 1) 183%, rgba(0, 0, 0, 1) 0%);
-    }
-
-    #about_img {
-        display: none;
-    }
-
-    #hero_img {
-        display: block;
-    }
-
-    #hero_img {
-        width: 70vw;
-        margin: auto;
-        border-radius: 10px;
-        margin-top: 3.0rem;
-        box-shadow: 0px 0px 0.625rem 0.25rem #3d3d3d;
-    }
-
-    #hero_text {
-        text-align: center;
-        padding: 8% 0px 0px 0px;
-        margin: auto;
-
-        text-wrap: nowrap;
-        font-size: 4.5vw;
-    }
-
-    #hero_text p {
-        font-size: 5.5vw;
-    }
-
-
-    .hero_symbols i {
-        font-size: 4.5vw;
-        padding: 0;
-        margin: .2rem;
-    }
-
-    .hero_text_div {
-        height: 35vh;
-        display: flex;
-    }
-
-
-
-    #logo_text h1 {
-        font-size: 2.0rem;
-    }
-
-    nav img {
-        width: 4rem;
-    }
-
-    nav {
-        margin: .2rem 3.5rem;
-    }
-
-    .about_menu{
-        
-    width: 80%;
+        width: 80%;
     }
 
     .about_col_2 {
         padding: 1.8rem .8rem 1.8rem .8rem;
     }
 
-    
+
 
     #about_page {
 
         padding: 5rem 5rem;
     }
 
+    
+    .services {
+        padding: 2.0rem 2.2rem 2.0rem 2.2rem;
+
+        overflow: hidden;
+    }
+
+
     .project_section {
         padding: 2.0rem 2.1rem 2.0rem 2.1rem;
     }
 
-    #contacts_page {
-        padding: 2.0rem 2.2rem 2.0rem 2.2rem;
+    
+    .contact_left {
+        position: relative;
     }
 
-    .services {
-        padding: 2.0rem 2.2rem 2.0rem 2.2rem;
+    .contact_left::after {
+        content: '';
+        width: 100%;
+        height: 0.3rem;
+        background-color: #313131;
+        margin: 3rem 0px;
+        transition: 0.5s;
+
+        position: absolute;
+        left: 0;
+        top: 84%;
+    }
+
+    #contacts_page {
+        overflow: hidden;
+        padding: 2rem 2.2rem 2rem 2.2rem;
     }
 
     .copyright_sec {
-        font-size: .12rem;
+        font-size: 1.2rem;
     }
 
     .contact_left p {
         font-size: 1.8rem;
     }
 
-    .contact_left{
+    .contact_left {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        padding: 0rem 0rem 3rem 0rem;
     }
+
     .contactme {
         margin: 0rem .5rem 0rem 0rem;
     }
 
-    .symbols{
-        
-    margin: 1rem 0.5rem;
+    .symbols {
+
+        margin: 1rem 0.5rem;
     }
+
+    .copyright_sec p {
+
+        font-size: 2.5vw;
+    }
+
+    #copyrightsec_name {
+
+        font-size: 2.5vw;
+    }
+
+
 
 }
