@@ -232,6 +232,49 @@ nav div:first-child {
 }
 
 
+#intro_div{
+    
+    height: 100vh;
+    
+    background-color: rgb(59, 58, 58);
+    width: 100vw;
+    margin: auto;
+    position: relative;
+}
+
+#text_div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    justify-content: center;
+}
+
+.text_div{
+    overflow: hidden;
+    
+}
+
+.text{
+    top: 100%;
+    position: relative;
+    text-wrap: nowrap;
+    font-size: 3vw;
+}
+
+#slider{
+    height: 50vh;
+    background-color: gray;
+    position: absolute;
+    width: 100vw;
+    z-index: 2;
+    top: 100vh;
+}
+
 /* About Page */
 
 .row {
@@ -700,6 +743,7 @@ form button {
 
 @media only screen and (min-width: 1411px) {
 
+
     .second_div {
         margin: auto;
         /* width: fit-content; */
@@ -731,6 +775,15 @@ form button {
         position: fixed;
         right: 50vh;
         /* right: 34vh; */
+    }
+
+    #intro_div{
+        width: 70vw;
+    }
+
+    #slider
+    {
+        width: 70vw;
     }
 
 }
@@ -1066,7 +1119,9 @@ form button {
         font-size: 2.5vw;
     }
 
-
+    .text{
+        font-size: 5vw;
+    }
 
 }
 
@@ -1080,46 +1135,3 @@ form button {
     z-index: 1;
 }
 
-
-#intro_div{
-    
-    height: 100vh;
-    
-    background-color: rgb(59, 58, 58);
-    width: 100vw;
-    margin: auto;
-    position: relative;
-}
-
-#text_div{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 50%;
-    justify-content: center;
-}
-
-.text_div{
-    overflow: hidden;
-    
-}
-
-.text{
-    top: 100%;
-    position: relative;
-    text-wrap: nowrap;
-    font-size: 3vw;
-}
-
-#slider{
-    height: 50vh;
-    background-color: gray;
-    position: absolute;
-    width: 100vw;
-    z-index: 2;
-    top: 100vh;
-}
