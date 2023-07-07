@@ -198,3 +198,5 @@ if(window.innerHeight > 1500)
  document.getElementById("education").style.marginLeft = "5rem";
 }
 
+
+
