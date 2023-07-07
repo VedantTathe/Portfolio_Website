@@ -4,18 +4,30 @@
 var tablink = document.getElementsByClassName("tab_links");
 var tabcont = document.getElementsByClassName("tab_content");
 function tabClick(name) {
-    for (tl of tablink) {
-        tl.classList.remove("active_link");
-    }
-    for (tc of tabcont) {
-        tc.classList.remove("active_tab");
-    }
 
+   for (tlink of tablink) {
+    tlink.classList.remove("active_link");
+}
+
+for (tc of tabcont) {
+ tc.classList.remove("active_tab");
+}
+    
     var activelink = document.getElementById(name);
     activelink.classList.add("active_link");
 
-    var activetab = document.getElementById(name + "_tab");
+    var activetab = document.getElementById(name+"_tab");
     activetab.classList.add("active_tab");
+
+
+
+    
+    // var activatedlink = document.querySelector("active_link");
+    // activatedlink.classList.remove("active_link");
+
+    // var activatedtab = document.querySelector("active_tab");
+    // activatedtab.classList.remove("active_tab");
+
 
 }
 
@@ -198,5 +210,21 @@ if(window.innerHeight > 1500)
  document.getElementById("education").style.marginLeft = "5rem";
 }
 
-
-
+//scroll disable
+function disableScroll() {
+    // Get the current page scroll position
+    scrollTop =
+    window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft =
+    window.pageXOffset || document.documentElement.scrollLeft,
+  
+        // if any scroll is attempted,
+        // set this to the previous value
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+}
+  
+function enableScroll() {
+    window.onscroll = function() {};
+}
