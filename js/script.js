@@ -228,3 +228,19 @@ function disableScroll() {
 function enableScroll() {
     window.onscroll = function() {};
 }
+
+//project 4 vedant's electrohub
+
+let project4 = document.querySelector("#project4");
+let project4btn = document.querySelector("#project4btn");
+let project4close = document.querySelector("#project4-close");
+
+project4.style.display = "none";
+
+project4btn.addEventListener('click',()=>{
+    project4.style.display = "block";
+});
+
+project4close.addEventListener('click',()=>{
+    project4.style.display = "none";
+});

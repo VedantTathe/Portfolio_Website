@@ -1135,3 +1135,34 @@ form button {
     z-index: 1;
 }
 
+
+/* //project4 display */
+
+#project4{
+    transition: 0.5s;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    position: absolute;
+    z-index: 999;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%);
+}
+
+#project4-close
+{
+    position: absolute;
+    right:10px;
+    top: 10px;
+    font-size: 30px;
+    color: white;
+    background: #2e2e2e;
+    border-radius: 15px;
+    padding: 0 5px 0 5px;
+}
+
+#projects_page
+{
+    position: relative;
+}
