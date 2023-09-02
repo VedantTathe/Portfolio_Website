@@ -244,3 +244,10 @@ project4btn.addEventListener('click',()=>{
 project4close.addEventListener('click',()=>{
     project4.style.display = "none";
 });
+
+//Message Submit Alert
+var msgalert = document.querySelector("#contact_alert");
+
+msgalert.addEventListener('click',()=>{
+    msgalert.style.display = "none";
+});

@@ -1166,3 +1166,31 @@ form button {
 {
     position: relative;
 }
+
+/* Message Submit Alert */
+#contact_alert
+{    display: flex;
+    font-size: 25px;
+    width: 100%;
+    background-color: #b9b9b9;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact_alert_msg{
+    flex-basis: 94%;
+    text-align: center;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#contact_msg_button{
+  
+    background-color: transparent;
+    font-size: 25px;
+    border: none;
+    margin: 10px;
+}
+

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +11,7 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/c8a0e865fe.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+
 </head>
 
 <body>
@@ -18,7 +22,7 @@
                 <div id="hero_page">
                     <nav id="navbar">
                         <div>
-                            <img src="./images/logo.png" alt="">
+                            <img src="./images/logo.jpg" alt="">
                             <div id="logo_text">
                                 <h1 style="color: orangered;">V</h1>
                                 <h1 style="margin-left: -.5rem;">edant</h1>
@@ -43,6 +47,21 @@
                             <i class="fa-solid fa-bars" onclick="menuOpen()"></i>
                         </div>
                     </nav>
+
+                    <?php
+                    // session_start();
+                    if(isset($_SESSION['msg']) && !empty($_SESSION['msg'])){
+                        $msg = $_SESSION["msg"];
+                        $name = $_SESSION["name"];
+                        $email = $_SESSION["email"];
+                        $message = $_SESSION["message"];
+
+
+                        echo '<div id="contact_alert"><div id="contact_alert_msg"><strong>'.$name.'</strong> Your '.$msg.'</div><button id="contact_msg_button"><i class="fa-solid fa-xmark"></i></button></div>';
+                        session_unset();
+                    }
+                    ?>
+
 
                     <div class="hero_img_div">
                         <img id="hero_img" src="./images/WhatsApp Image 2023-06-24 at 12.59.32.jpg" alt="">
@@ -72,7 +91,7 @@
                                 <!-- <img id="hero_img2" src="./images/WhatsApp Image 2023-06-24 at 12.59.32.jpg" alt=""> -->
                                 <div>
                                     <img id="hero_img2"
-                                        src="./images/sketch_profile-fotor-bg-remover-20230622193238.png" alt="">
+                                        src="./images/sketch_profile-fotor-bg-remover-20230622193238.jpg" alt="">
 
                                 </div>
                             </div>
@@ -81,7 +100,7 @@
                     </div>
                 </div>
 
-                <!-- hide loader and slider -->
+                <!-- hide loader and slider
                 <div id="intro">
                     <div id="intro_div">
                         <div id="text_div">
@@ -95,7 +114,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="slider"></div>
+                <div id="slider"></div> -->
 
                 <!-- About Section -->
                 <div id="about_page">
@@ -132,18 +151,18 @@
                                             <div>
                                                 <ul>
                                                     <li><span>C, C++</span><br>
-                                                        <progress value="90" max="100"></progress>
+                                                        <progress value="95" max="100"></progress>
                                                         <br>
                                                     </li>
-                                                    <li><span>JAVA</span><br><progress value="85" max="100"></progress>
+                                                    <li><span>JAVA</span><br><progress value="90" max="100"></progress>
                                                         <br>
                                                     </li>
-                                                    <li><span>HTML, CSS</span><br><progress value="90"
+                                                    <li><span>HTML, CSS</span><br><progress value="95"
                                                             max="100"></progress>
                                                         <br>
                                                     </li>
                                                     <li><span>JAVASCIPT</span><br>
-                                                        <progress value="75" max="100"></progress>
+                                                        <progress value="85" max="100"></progress>
                                                         <br>
                                                     </li>
                                                 </ul>
@@ -152,18 +171,16 @@
 
                                             <div class="more_skills">
                                                 <ul>
-                                                    <li><span>*REACT</span><br><progress value="0" max="100"></progress>
-                                                        <br>
-                                                    </li>
-                                                    <li><span>NODEJS, EXPRESSJS</span><br>
-                                                        <progress value="75" max="100"></progress>
-                                                        <br>
-                                                    </li>
-                                                    <li><span>MONGODB</span><br><progress value="75"
+                                                    <li><span>SERVLETS & JSP</span><br><progress value="85"
                                                             max="100"></progress>
                                                         <br>
                                                     </li>
-                                                    <li><span>ANDROID DEVELOPMENT</span><br><progress value="75"
+                                                    <li>
+                                                        <span>BASIC NODEJS, EXPRESSJS</span><br>
+                                                        <progress value="75" max="100"></progress>
+                                                        <br>
+                                                    </li>
+                                                    <li><span>BASIC MONGODB</span><br><progress value="75"
                                                             max="100"></progress>
                                                         <br>
                                                     </li>
@@ -232,7 +249,7 @@
                     </div>
                 </div>
 
-               
+
 
                 <!-- Projects -->
                 <div class="project_section" id="projects_page">
@@ -249,7 +266,7 @@
                                 <!-- ****************************************************************** -->
                             </div>
                             <div class="projects_box">
-                                <img src="./images/project4.png" alt="">
+                                <img src="./images/project4.jpg" alt="">
                                 <!-- ********************************************** -->
                                 <div class="projects_link" id="project4btn">
                                     <h3><a>Vedant's Electrohub</a></h3>
@@ -258,7 +275,10 @@
                             </div>
                             <div id="project4">
                                 <span id="project4-close"><i class="fa fa-close"></i></span>
-                                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7091089862686097408" height="400" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                                <iframe
+                                    src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7091089862686097408"
+                                    height="400" width="500" frameborder="0" allowfullscreen=""
+                                    title="Embedded post"></iframe>
                             </div>
                             <div class="projects_box">
                                 <img src="./images/project2.jpg" alt="">
@@ -273,7 +293,8 @@
                                 <img src="./images/project3.jpg" alt="">
                                 <!-- ********************************************** -->
                                 <div class="projects_link">
-                                    <h3><a href="https://websiteloaderanimations.netlify.app/">Wesite Loader Ani..</a></h3>
+                                    <h3><a href="https://websiteloaderanimations.netlify.app/">Wesite Loader Ani..</a>
+                                    </h3>
                                 </div>
 
                                 <!-- ****************************************************************** -->
@@ -309,11 +330,13 @@
                                 <img src="./images/temp_conv.jpg" alt="">
                                 <!-- ********************************************** -->
                                 <div class="projects_link">
-                                    <h3><a href="https://tempratureconvertorvgt.netlify.app">Temprature Convertor</a></h3>
+                                    <h3><a href="https://tempratureconvertorvgt.netlify.app">Temprature Convertor</a>
+                                    </h3>
                                 </div>
 
                                 <!-- ****************************************************************** -->
-                            </div> <div class="projects_box projects_box_hide">
+                            </div>
+                            <div class="projects_box projects_box_hide">
                                 <img src="./images/website_counter.jpg" alt="">
                                 <!-- ********************************************** -->
                                 <div class="projects_link">
@@ -359,7 +382,7 @@
                                         download id="resume">Download Resume</button></a>
                             </div>
                             <div class="contact_right">
-                                <form action="./php/index.php" method="post">
+                                <form action="./contact.php" method="post">
                                     <input class="form" type="text" name="Name" id="name" placeholder="Your Name"
                                         required autocomplete="off">
                                     <input class="form" type="email" name="Email" id="email" placeholder="Your Email"
@@ -387,13 +410,18 @@
 
     </div>
 
-    <script src="./js/script.js"></script>
 
+
+    <script src="./js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
         integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="./gsap.js"></script>
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script> -->
+
+
+
 </body>
 
 </html>
